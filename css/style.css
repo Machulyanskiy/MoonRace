@@ -1,13 +1,17 @@
+html {
+	scroll-behavior: smooth;
+}
+
 section {
 	padding: 0;
 }
 
 .full-width {
-	width: 100vw;
+	width: 100%;
 }
 
 .full-height {
-	width: 100vh;
+	height: 100vh!important;
 }
 
 #main-block {
@@ -23,7 +27,51 @@ section {
 }
 
 #description {
-	
+	position: relative;
+    height: auto;
+    min-height: 35rem;
+    padding: 15rem 0;
+    background: url(../img/poster.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+#description p {
+	color: #ffffff;
+    font-weight: bold;
+}
+
+#partners {
+	padding: 5vh 0;
+}
+
+#partners-block {
+	display: flex;
+	justify-content: space-around;
+}
+
+.img-block img{
+	max-height: 20vh;
+}
+
+#video {
+	padding: 20vh 0;
+}
+
+#portfolio .container:before {
+	display: table;
+    content: " ";
+}
+
+#portfolio div {
+    padding: 0;
+}
+
+#portfolio img {
+    width: inherit;
+    padding: 5px;
 }
 
 #@media (min-width: 992px) {

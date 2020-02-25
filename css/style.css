@@ -1,0 +1,33 @@
+section {
+	padding: 0;
+}
+
+.full-width {
+	width: 100vw;
+}
+
+.full-height {
+	width: 100vh;
+}
+
+#main-block {
+	position: relative;
+    height: auto;
+    min-height: 35rem;
+    padding: 15rem 0;
+    background: url(../img/main.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+#description {
+	
+}
+
+#@media (min-width: 992px) {
+#	#main-block{
+#		height: 100vh;
+#	}
+#}

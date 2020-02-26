@@ -14,6 +14,10 @@ section {
 	height: 100vh!important;
 }
 
+#mainNav {
+	background-color: white;
+}
+
 #main-block {
 	position: relative;
     height: auto;
@@ -74,6 +78,74 @@ section {
     padding: 5px;
 }
 
+#video-text {
+	display: inherit;
+    vertical-align: middle;
+}
+
+#place-container div{
+	padding: 0;
+}
+
+.place-img-block{
+	cursor: pointer;
+}
+.place-img-block img{
+	width: 100%;
+}
+
+.change {
+	display: none;
+}
+
+.place-front-view{
+	display: none;
+	width: 100%;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    z-index: 2;
+}
+
+.place-view-bg{
+	width: 100%;
+	height: 100%;
+    background-color: rebeccapurple;
+	opacity: 30%;
+}
+
+.place-view-text {
+	position: absolute;
+    top: 85%;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+}
+
+#registration{
+	padding: 40vh 0;
+    background-color: gainsboro;
+}
+
+#reg-title{
+	text-align: center;
+}
+
+.bro-title {
+	padding: 15vh 0;
+}
+
+#gallery{
+	padding: 40vh 0;
+    background-color: khaki;
+}
+
+.display-flex {
+	display: flex;
+}
 #@media (min-width: 992px) {
 #	#main-block{
 #		height: 100vh;

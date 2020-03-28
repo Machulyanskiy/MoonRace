@@ -1,5 +1,52 @@
+/* @media (min-width: 1200px) {
+    #main-block-container {
+        max-width: 1440px!important;
+    }
+}
+ */
+@keyframes rotate {
+    0% { transform: rotate(360deg); }
+    100% { transform: rotate(0deg); }
+}
+@-moz-keyframes rotate {
+    0% { -moz-transform: rotate(360deg); }
+    100% { -moz-transform: rotate(0deg); }
+}
+@-webkit-keyframes rotate {
+    0% {-webkit-transform: rotate(360deg); }
+    100% { -webkit-transform: rotate(0deg); }
+}
+@-o-keyframes rotate {
+    0% { -o-transform: rotate(360deg); }
+    100% { -o-transform: rotate(0deg); }
+}
+
 html {
 	scroll-behavior: smooth;
+}
+
+body {
+    position: absolute;
+}
+
+h1 {
+    font-size: 2.8vw;
+}
+
+h2 {
+    font-size: 1.77vw;
+}
+
+h3 {
+    font-size: 0.9vw;
+}
+
+.m-top-40 {
+    margin-top: 40%;
+}
+
+.m-10-0 {
+    margin: 10% 0;
 }
 
 section {
@@ -7,7 +54,7 @@ section {
 }
 
 .full-width {
-	width: 100%;
+	width: 100%!important;
 }
 
 .full-height {
@@ -15,11 +62,53 @@ section {
 }
 
 #mainNav {
-	background-color: white;
+    background-color: white;
+    height: 10vh;
+}
+
+#logo{
+    width: 25vh;
+    height: 25vh;
+    position: absolute;
+    z-index: 400;
+    background-color: white;
+    /* top: 1vh; */
+    margin: 0;
+}
+
+.spin {
+    animation: spin 2s linear 0s infinite paused;
+    -moz-animation: 2s linear 0s paused none infinite spin;
+    -webkit-animation: spin 2s linear 0s infinite paused;
+    -0-animation: spin 2s linear 0s infinite paused;
+    -webkit-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+#logo-rider {
+    height: 100%;
+    min-height: 1vh;
+    background: url(../img/logo-rider.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#logo-text {
+    height: 100%;
+    min-height: 1vh;
+    background: url(../img/logo-text.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #main-block {
-	position: relative;
+    height: 80vh;
+    margin: 10vh 0;
+	/* position: relative;
     height: auto;
     min-height: 35rem;
     padding: 15rem 0;
@@ -27,8 +116,57 @@ section {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
+    background-size: cover; */
+}
+
+/* #main-block-container {
+    margin: auto;
+} */
+
+#main-img {
+    position: relative;
+    height: 100%;
+    min-height: 35rem;
+    padding: 15rem 0;
+    background: url(../img/facebookposftinal.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
     background-size: cover;
 }
+
+#reg-block {
+    background-color: #131722;
+    color: white;
+}
+
+#reg-block>div {
+    padding: 0 5%;
+}
+
+.reg-btn-block p {
+    text-align: right;
+    color: #FBE18C;
+}
+
+.reg-btn {
+    width: 100%;
+    padding: 3% 0;
+    border: 3px solid;
+    border-radius: 5px;
+    color: white;
+}
+
+.reg-btn-ticket {
+    background-color: #55A555;
+    border-color: #55A555;
+}
+
+.reg-btn-rider {
+    background-color: #131722;
+    border-color: white;
+}
+
 
 #description {
 	position: relative;
@@ -146,8 +284,8 @@ section {
 .display-flex {
 	display: flex;
 }
-#@media (min-width: 992px) {
+/* #@media (min-width: 992px) {
 #	#main-block{
 #		height: 100vh;
 #	}
-#}
+#} */

@@ -15,9 +15,21 @@ $(function() {
 		$('.place-img-block').find('.change').toggle();
 	});
 	
+	let rotation = 0;
+	let rider = $('#logo-rider');
+	let rotationStr;
+	$(window).scroll(() => {
+		rotation++;
+		rotationStr = `rotate(${rotation}deg)`;
+		console.log(rotationStr);
+		rider.css({
+			"-webkit-transform": rotationStr,
+			"-moz-transform": rotationStr,
+			"transform": rotationStr
+		});
+	});
 	
-	
-	const navbarCollapse = function() {
+	/* const navbarCollapse = function() {
 		console.log(window.scrollY);
 		if (window.scrollY > $('#description').offset().top) {
 		  $("#mainNav").show();
@@ -28,5 +40,5 @@ $(function() {
 	// Collapse now if page is not at top
 	navbarCollapse();
 	// Collapse the navbar when page is scrolled
-	$(window).scroll(navbarCollapse);
+	$(window).scroll(navbarCollapse); */
 });

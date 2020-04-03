@@ -21,8 +21,14 @@
     100% { -o-transform: rotate(0deg); }
 }
 
+* {
+    padding: 0;
+    margin: 0%;
+}
+
 html {
-	scroll-behavior: smooth;
+    scroll-behavior: smooth;
+    font-size: 16px;
 }
 
 body {
@@ -61,9 +67,34 @@ section {
 	height: 100vh!important;
 }
 
+.w-30 {
+    width: 30%;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+#nav-panel {
+    background-color: #131722;
+    color: white;
+    z-index: 9999;
+    position: absolute;
+    top: 0;
+    height: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#lang-block {
+    margin-right: 1.5rem;
+    margin-top: 0.1rem;
+}
+
 #mainNav {
     background-color: white;
     height: 10vh;
+    top: 1.5rem;
 }
 
 #logo{
@@ -138,10 +169,13 @@ section {
 #reg-block {
     background-color: #131722;
     color: white;
+    display: table;
 }
 
-#reg-block>div {
-    padding: 0 5%;
+#reg-block-container {
+    padding: 7%;
+    display: table-cell;
+    vertical-align: bottom;
 }
 
 .reg-btn-block p {

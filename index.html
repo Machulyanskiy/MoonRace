@@ -12,7 +12,12 @@
 
   <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
-
+  <link href="css/fontawesome.min.css" rel="stylesheet">
+  <link href="css/brands.min.css" rel="stylesheet">
+  <link href="css/regular.min.css" rel="stylesheet">
+  <link href="css/slick.css" rel="stylesheet">
+  <link href="css/tooltipster.css" rel="stylesheet">
+  <link href="css/solid.min.css" rel="stylesheet">
   <!-- Custom fonts for this template -->
  <!--  <link href="css/all.min.css" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
@@ -28,103 +33,117 @@
 <body id="page-top">
 
   <!-- Navigation -->
-  <nav id="nav-panel" class="w-100">
-	 <div id="lang-block">
-		<span>УКР</span>
-	  	<span>EN</span>
-	</div>
-  </nav>
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="main-nav">
-    <div class="w-100 display-flex">
-	<div id="blank-triangle"></div>
-
-      <a id="logo" class="navbar-brand" onclick="scrollToSection('#page-top');">
-		  <div id="logo-rider" class="rotate"></div>
-		  <div id="logo-text"></div>
-	  </a>
-      <button class="navbar-toggler navbar-toggler-right" type="button">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <!-- <li class="nav-item">
-            <a class="nav-link  " href="#video">Програма</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link  " href="#locations">Локації</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link  " href="#support">Підтримати</a>
-          </li>
-		  <li class="nav-item">
-            <a class="nav-link  " href="#contacts">Контакти</a>
-		  </li> -->
-		  <li class="nav-item">
-			<a onclick="scrollToSection('#video');">Програма</a>
-          </li>
-          <li class="nav-item">
-            <a onclick="scrollToSection('#locations');" >Локації</a>
-          </li>
-          <li class="nav-item">
-            <a onclick="scrollToSection('#support');" >Підтримати</a>
-          </li>
-		  <li class="nav-item">
-            <a onclick="scrollToSection('#contacts');" >Контакти</a>
-          </li>
-		</ul>
-		<div id="nav-btns">
-			<a href="https://tinyurl.com/moonrace4" target="_blank" class="reg-btn reg-btn-nav reg-btn-rider-nav">Зареєструватися райдером</a>
-			<a href="https://secure.wayforpay.com/payment/moonrace4" target="_blank" class="reg-btn reg-btn-nav reg-btn-ticket">Купити квиток</a>
+	<nav id="nav-panel" class="w-100">
+		<div id="first-line" class="">
+			<div id="lang-block">
+			<span>УКР</span>
+				<span>EN</span>
+			</div>
+			<div id="social-block">
+				<a href="https://www.instagram.com/moon.race"><i class="fab fa-instagram"></i></a>
+				<a href="https://www.facebook.com/lbmoonrace/"><i class="fab fa-facebook"></i></a>
+				<a href="https://t.me/moonrace2020"><i class="fab fa-telegram"></i></a>
+			</div>
 		</div>
-      </div>
-    </div>
-  </nav>
+	</nav>
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="main-nav">
+		<div id="nav-block" class="w-100 display-flex">
+			<div id="blank-triangle"></div>
 
-  <section id="main-block" class="full-width">
-	<div class="d-flex h-100 w-100 align-items-center">
+			<a id="logo" class="navbar-brand" onclick="scrollToSection('#page-top');">
+				<div id="logo-rider" class="rotate logo-item"></div>
+				<div id="logo-text" class="logo-item"></div>
+			</a>
+			<button class="navbar-toggler navbar-toggler-right" type="button">
+				Menu
+				<i class="fas fa-bars"></i>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<!-- <li class="nav-item">
+					<a class="nav-link  " href="#video">Програма</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link  " href="#locations">Локації</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link  " href="#support">Підтримати</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link  " href="#contacts">Контакти</a>
+					</li> -->
+					<li class="nav-item">
+						<a onclick="scrollToSection('#video');">Програма</a>
+					</li>
+					<li class="nav-item">
+						<a onclick="scrollToSection('#locations');" >Локації</a>
+					</li>
+					<li class="nav-item">
+						<a onclick="scrollToSection('#support');" >Підтримати</a>
+					</li>
+					<li class="nav-item">
+						<a onclick="scrollToSection('#contacts');" >Контакти</a>
+					</li>
+				</ul>
+				<div id="nav-btns">
+					<a 	href="https://tinyurl.com/moonrace4" 
+						id="nav-rider-btn"
+						target="_blank" 
+						class="reg-btn reg-btn-nav reg-btn-rider-nav">
+						Зареєструватися райдером
+					</a>
+
+					<a 	href="https://secure.wayforpay.com/payment/moonrace4"
+						id="nav-ticket-btn"
+						target="_blank" 
+						class="reg-btn reg-btn-nav reg-btn-ticket">
+						Купити квиток
+					</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+  <section id="main-block" class="full-width sec-img">
+	<div id="welcome-img"></div>
+	<!-- <div class="d-flex h-100 w-100 align-items-center"> -->
 		<div id="reg-block" class="w-35 h-100">
 			<div id="reg-block-container" class="w-100 m-top-40">
 				<h1>MoonRace 4</h1>
 				<h2>19 - 21 червня 2020 року</h2>
-				<h3 class="m-10-0">Фестиваль лонгбордингу Moon Race 4/2020  чекає тебе на схилах села Круглик Київської області</h3>
-				<div id="reg-ticket-block" class="reg-btn-block">
-					<a href="https://secure.wayforpay.com/payment/moonrace4" target="_blank" class="reg-btn reg-btn-front reg-btn-ticket">Купити квиток</a>
-					<p>За ціною 420 грн</p>
-				</div>
-				<div id="reg-rider-block" class="reg-btn-block">
-					<a href="https://tinyurl.com/moonrace4" target="_blank" class="reg-btn reg-btn-front reg-btn-rider">Зареєструватися райдером</a>
-					<p>За ціною 200 грн</p>
-				</div>
+				<h3 class="m-10-0">Фестиваль лонгбордингу Moon Race 4/2020 запрошує тебе на схили села Круглик Київської області</h3>
+				
 			</div>
 			
 		</div>
-		<div id="main-img" class="w-65">
-		</div>
-	</div>
+		<!-- <div id="main-img" class="w-65">
+		</div> -->
+	<!-- </div> -->
 </section>
 
-	<!-- <section id="main-block" class="full-height full-width">
-		<div class="container d-flex h-100 align-items-center">
-			<div class="mx-auto text-center">
-				<a href="#description" class="btn btn-primary  ">Get Started</a>
-			</div>
-		</div>
-	</section> -->
+<section>
+	<div id="reg-ticket-block" class="reg-btn-block full-width">
+		<a href="https://secure.wayforpay.com/payment/moonrace4" target="_blank" class="reg-btn reg-btn-front reg-btn-ticket">Купити квиток</a>
+		<p>За ціною 420 грн</p>
+	</div>
+	<div id="reg-rider-block" class="reg-btn-block full-width">
+		<a href="https://tinyurl.com/moonrace4" target="_blank" class="reg-btn reg-btn-front reg-btn-rider">Зареєструватися райдером</a>
+		<p>За ціною 200 грн</p>
+	</div>
+</section>
+<!-- <div id="test" data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
+	<div><h3>1</h3></div>
+	<div><h3>2</h3></div>
+	<div><h3>3</h3></div>
+	<div><h3>4</h3></div>
+	<div><h3>5</h3></div>
+	<div><h3>6</h3></div>
+  </div> -->
 
-
-  
-	<!-- <section id="description" class="full-width">
-		<div class="container">
-			<div class="mx-auto text-center">
-				<p>19-21.06.2020 року Moon Race вчетверте влаштує найбільшу і найшвидшу гонку, найгучнішу вечірку і найтеплішу тусовку для лонгбордистів зі всієї країни. Щоб приєднатись до нас, переходь одразу до реєстрації райдерів або розділу з квитками. Також ти можеш стати волонтером і допомогти побудувати Moon Race 4/2020.</p>
-			</div>
-		</div>
-	</section> -->
 	
 	<section id="partners" class="full-width pd-top-100">
 			<div id="partners-slider">
-			<ul id="partners-block" class="row align-items-center">
+			<!-- <ul id="partners-block" class="row align-items-center">
 				<li class="img-block slider-img">
 					<img src="img/paris.png" alt="paris longboard trucks logo">
 				</li>
@@ -149,7 +168,17 @@
 				<li class="img-block slider-img">
 					<img src="img/or.png" alt="orangatang logo">
 				</li>
-			</ul>
+			</ul> -->
+			<div id="test">
+				<div class="slider-img"><a href="" class="partner-link"><img src="img/paris.png" alt="paris longboard trucks logo"></a></div>
+				<div class="slider-img"><a href="" class="partner-link"><img src="img/waves.png" alt="waves board shop logo"></a></div>
+				<div class="slider-img"><a href="" class="partner-link"><img src="img/keeper.svg" alt="keeper store logo"></a></div>
+				<div class="slider-img"><a href="" class="partner-link"><img src="img/ulf.png" alt="ukrainian longboard federation logo"></a></div>
+				<div class="slider-img"><a href="" class="partner-link"><img src="img/911.png" alt="911 sport shop logo"></a></div>
+				<div class="slider-img"><a href="" class="partner-link"><img src="img/candy.png" alt="candy shop logo"></a></div>
+				<div class="slider-img"><a href="" class="partner-link"><img src="img/one.png" alt="one true shop logo"></a></div>
+				<div class="slider-img"><a href="" class="partner-link"><img src="img/or.png" alt="orangatang logo"></a></div>
+			  </div>
 
 			<!-- <div class="row align-items-center">
 				<div class="img-block slider-img">
@@ -216,7 +245,7 @@
 			<div class="row margin-bottom-5vh">
 				<div class="col-md-4">
 					<div class="img-block">
-						<img src="img/paris.png" alt="paris longboard trucks logo">
+						<img src="img/Events-downhill.png" alt="paris longboard trucks logo">
 					</div>
 					<div class="text-block">
 						<h2 class="text-block-title">Даунхіл</h2>
@@ -225,7 +254,7 @@
 				</div>
 				<div class="col-md-4">
 					<div class="img-block">
-						<img src="img/paris.png" alt="paris longboard trucks logo">
+						<img src="img/Events-freeride.png" alt="paris longboard trucks logo">
 					</div>
 					<div class="text-block">
 						<h2 class="text-block-title">Фрірайд</h2>
@@ -234,7 +263,7 @@
 				</div>
 				<div class="col-md-4">
 					<div class="img-block">
-						<img src="img/paris.png" alt="paris longboard trucks logo">
+						<img src="img/Events-fun-contests.png" alt="paris longboard trucks logo">
 					</div>
 					<div class="text-block">
 						<h2 class="text-block-title">Фанові змагання</h2>
@@ -246,7 +275,7 @@
 				<div id="activity-2-row" class="row col-md-8">
 					<div class="col-md-6">
 						<div class="img-block">
-							<img src="img/paris.png" alt="paris longboard trucks logo">
+							<img src="img/Events-concert.png" alt="paris longboard trucks logo">
 						</div>
 						<div class="text-block">
 							<h2 class="text-block-title">Гучна вечірка</h2>
@@ -255,7 +284,7 @@
 					</div>
 					<div class="col-md-6">
 						<div class="img-block">
-							<img src="img/paris.png" alt="paris longboard trucks logo">
+							<img src="img/Events-master-class.png" alt="paris longboard trucks logo">
 						</div>
 						<div class="text-block">
 							<h2 class="text-block-title">Насичена програма</h2>
@@ -270,15 +299,30 @@
 	<section id="groups">
 		<h1 id="groups-title">Гурти</h1>
 		<div id="groups-container">
-			<div class="col-md-6 groups-img-block">
-				<img src="img/paris.png" alt="paris longboard trucks logo">
-			</div>
-			<div class="col-md-6">
-				<div class="groups-description-block">
-					<h1>KRAKEN LANDAU</h1>
-					<h2 class="groups-genre-title">SURF-ROCK, SCI-FI, SPV</h2>
+			<div id="slide-1" class="slide">
+				<div class="col-md-7 groups-img-block">
+					<img class="group-img" src="img/Bands-Kraken-Landau.png" alt="paris longboard trucks logo">
+				</div>
+				<div class="col-md-5	">
+					<div class="groups-description-block">
+						<h1>KRAKEN LANDAU</h1>
+						<h2 class="groups-genre-title">SURF-ROCK, SCI-FI, SPV</h2>
 
-					<p class="text-block-description">Балансборд, слеклайни, стрільба з лука, скільки ще неймовірних активітетів вас очікує.</p>
+						<p class="text-block-description">Балансборд, слеклайни, стрільба з лука, скільки ще неймовірних активітетів вас очікує.</p>
+					</div>
+				</div>
+			</div>
+			<div id="slide-2" class="slide">
+				<div class="col-md-7 groups-img-block">
+					<img class="group-img" src="img/Bands-Kraken-Landau.png" alt="paris longboard trucks logo">
+				</div>
+				<div class="col-md-5	">
+					<div class="groups-description-block">
+						<h1>ТВОЯ МАМКА</h1>
+						<h2 class="groups-genre-title">HARDCORE, PSYCHO</h2>
+
+						<p class="text-block-description">Балансборд, слеклайни, стрільба з лука, скільки ще неймовірних активітетів вас очікує.</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -291,14 +335,28 @@
 	<section id="locations">
 		<h1 id="locations-title">ЛОКАЦІЇ</h1>
 		<div id="locations-container">
-			<div class="location-description">
-				<div class="location-description-container">
-					<div class="location-image-marker"></div>
+			<ul class="col-md-4 location-description">
+				<li id="scene" class="location-description-container">
+					<div id="scene-desc-img" class="location-image-marker"></div>
 					<h2 class="location-title">сцена</h2>
 					<p class="location-description-text">Балансборд, слеклайни, стрільба з лука, скільки ще неймовірних активітетів вас очікує.</p>
-				</div>
+				</li>
+				<li id="food" class="location-description-container">
+					<div id="food-desc-img" class="location-image-marker"></div>
+					<h2 class="location-title">сцена 22</h2>
+					<p class="location-description-text">Балансборд, слеклайни, стрільба з лука, скільки ще неймовірних активітетів вас очікує.</p>
+				</li>
+				<li id="camp" class="location-description-container">
+					<div id="camp-desc-img" class="location-image-marker"></div>
+					<h2 class="location-title">сцена 33</h2>
+					<p class="location-description-text">Балансборд, слеклайни, стрільба з лука, скільки ще неймовірних активітетів вас очікує.</p>
+				</li>
+			</ul>
+			<div class="col-md-8 locations-map">
+				<i id="scene-pin" data-id="scene" class="map-pin fas fa-map-marker"></i>
+				<i id="food-pin" data-id="food" class="map-pin fas fa-map-marker map-pin-active"></i>
+				<i id="camp-pin" data-id="camp" class="map-pin fas fa-map-marker"></i>
 			</div>
-			<div class="col-md-8 locations-map"></div>
 		</div>
 	</section>
 
@@ -309,13 +367,13 @@
 			<div id="support-blocks">
 				<div class="col-md-6">
 					<div class="support-image img-block">
-						<img src="img/paris.png" alt="paris longboard trucks logo">
+						<img src="img/Button-volunteer.png" alt="paris longboard trucks logo">
 					</div>
 					<button id="volunteer-btn" class="support-btn">Стати волонтером</button>
 				</div>
 				<div class="col-md-6">
 					<div class="support-image img-block">
-						<img src="img/paris.png" alt="paris longboard trucks logo">
+						<img src="img/Button-Donut.png" alt="paris longboard trucks logo">
 					</div>
 					<button id="donate-btn" class="support-btn">Донат</button>
 				</div>
@@ -420,6 +478,8 @@
   </footer>
   
   <script src="js/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/tooltipster.min.js"></script>
   <!-- <script src="js/slick.min.js"></script> -->
   <script src="js/main.js"></script>
 

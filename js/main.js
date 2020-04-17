@@ -50,6 +50,28 @@ $(function() {
 		dots: true,
 		centerMode: true
 	  }); */
+
+	  $('#test').slick({
+		infinite: true,
+		slidesToShow: 4,
+		slidesToScroll: 4,
+		arrows: false,
+		dots: true
+	  });
+
+	  $('#groups-container').slick({
+		arrows: false,
+		dots: true
+	  });
+
+	  $('.map-pin').click(function() {
+		$(this).addClass('map-pin-active');
+		$('.map-pin').not(this).removeClass('map-pin-active');
+		
+		const activeLocation = $(this).data('id');
+		$(`#${activeLocation}`).show();
+		$('.location-description-container').not(`#${activeLocation}`).hide();
+	  });
 });
 
 function scrollToSection(sectionId) {

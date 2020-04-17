@@ -4,6 +4,12 @@
     }
 }
  */
+/* 
+ @media (min-width: 200px) {
+    #activity {
+        display:none;
+    }
+} */
 @keyframes rotate {
     0% { transform: rotate(360deg); }
     100% { transform: rotate(0deg); }
@@ -37,6 +43,7 @@ body {
 }
 
 h1 {
+    font-family: "Roboto";
     font-size: 2.8vw;
 }
 
@@ -77,7 +84,7 @@ section {
 }
 
 .img-block img{
-	max-height: 20vh;
+	/* max-height: 20vh; */
 }
 
 #nav-panel {
@@ -86,9 +93,17 @@ section {
     z-index: 9999;
     position: absolute;
     top: 0;
-    height: 1.5rem;
+    /* height: 3rem; */
+    height: 5vh;
     display: flex;
     justify-content: flex-end;
+}
+
+#nav-block{
+    /* position: absolute; */
+    /* top: 40%; */
+    /* bottom: 20%; */
+    margin-bottom: -2%;
 }
 
 .nav-item {
@@ -108,6 +123,14 @@ section {
     display: flex;
 }
 
+/* #nav-ticket-btn {
+    width: 13vw;
+}
+
+#nav-rider-btn {
+    width: 30vh;
+} */
+
 #lang-block {
     margin-right: 1.5rem;
     margin-top: 0.1rem;
@@ -115,8 +138,10 @@ section {
 
 #main-nav {
     background-color: white;
-    height: 10vh;
-    top: 1.5rem;
+    height: 15vh;
+    top: 5vh;
+    /* top: 3rem; */
+    /* padding: 3.5rem 1rem 2rem; */
 }
 
 .main-nav-tiny {
@@ -133,15 +158,22 @@ section {
 }
 
 #logo{
+    width: 25vh;
+    height: 25vh;
     margin-left: 3vw;
     border-radius: 50%;
     width: 25vh;
     height: 25vh;
     position: absolute;
+    margin-top: -1%;
     z-index: 400;
     background-color: white;
-    /* top: 1vh; */
+    top: 1vh;
     /* margin: 0; */
+}
+
+#logo:hover {
+    cursor: pointer;
 }
 
 .spin {
@@ -156,8 +188,7 @@ section {
 }
 
 #logo-rider {
-    height: 100%;
-    min-height: 1vh;
+    margin: 6%;
     background: url(../img/logo-rider.svg);
     background-position: center;
     background-repeat: no-repeat;
@@ -165,17 +196,32 @@ section {
 }
 
 #logo-text {
-    height: 100%;
-    min-height: 1vh;
+    margin: 6%;
     background: url(../img/logo-text.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+.logo-item {
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    min-height: 1vh;
+    position: absolute;
+
+}
+
 #main-block {
-    height: 80vh;
-    margin-top: 10vh;
+    height: 70vh;
+    margin-top: 20vh;
+    display: inline-flex;
+    background-image: url(../img/header_image.png), url(../img/header_background.png);
+    background-position: bottom, center;
+    background-attachment: scroll, scroll;
+    background-size: cover, auto;
+    /* background-repeat: no-repeat;
+    background-size: cover; */
 	/* position: relative;
     height: auto;
     min-height: 35rem;
@@ -186,7 +232,18 @@ section {
     background-attachment: scroll;
     background-size: cover; */
 }
-
+/* 
+#welcome-img{
+    background: url(../img/header_image.png);
+    background-position: center;
+    background-attachment: scroll;
+}
+ */
+/* .sec-img {
+    background: url(../img/header_image.png);
+    background-position: center;
+    background-attachment: scroll;
+} */
 /* #main-block-container {
     margin: auto;
 } */
@@ -196,7 +253,7 @@ section {
     height: 100%;
     min-height: 35rem;
     padding: 15rem 0;
-    background: url(../img/facebookposftinal.png);
+    background: url(../img/header_image.png);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -204,7 +261,7 @@ section {
 }
 
 #reg-block {
-    background-color: #162136;
+    /* background-color: #162136; */
     color: white;
     display: table;
 }
@@ -235,6 +292,9 @@ section {
 
 .reg-btn-nav {
     padding: 1vh 3vh;
+    /* align-items: center;
+    height: 5vh;
+    justify-content: center; */
 }
 
 .reg-btn-rider-nav{
@@ -270,6 +330,13 @@ section {
 #description p {
 	color: #ffffff;
     font-weight: bold;
+}
+
+#test {
+    display: flex;
+    width: 80%;
+    overflow-x: hidden;
+    margin: 0 auto;
 }
 
 #partners {
@@ -364,12 +431,21 @@ section {
 }
 
 #groups-container {
+    margin-left: -1%;
     display: flex;
-    padding: 10vh 8vh;
+    padding: 10vh 0vh;
 }
 
 .groups-img-block {
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
+}
+
+.group-img {
+    width: 100%;
+}
+
+.slide {
+    display: flex!important;
 }
 
 .groups-description-block {
@@ -399,7 +475,7 @@ section {
 
 #locations-container {
     width: 100%;
-    height: 60vh;
+    height: 31vw;
     display: flex;
 }
 
@@ -410,6 +486,7 @@ section {
 
 .location-description-container {
     margin: 7vh 10vh;
+    position: absolute;
 }
 
 .location-image-marker {
@@ -420,7 +497,43 @@ section {
 
 .locations-map {
     height: 100%;
-    background-color: #55A555;
+    background: url(../img/map.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.map-pin {
+    position: absolute;
+    font-size: 2rem;
+    cursor: pointer;
+    color: teal;
+}
+
+.map-pin-active {
+    color: tomato;
+}
+
+#scene-desc-img {
+    background: url(../img/Map_Stage.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#scene-pin {
+    top: 27%;
+    left: 43%;
+}
+
+
+#food-pin {
+    top: 67%;
+    left: 11%;
+}
+
+#camp-pin{
+    top: 46%;
+    left: 45%;
 }
 
 .location-title {
@@ -459,7 +572,7 @@ section {
 }
 
 .support-btn {
-    width: 80%;
+    width: 60%;
     padding: 3% 0;
     border-radius: 25px;
 }

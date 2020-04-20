@@ -10,6 +10,8 @@
 
   <title>Moon Race</title>
 
+  <link rel="shortcut icon" href="img/logo-text.svg" />
+
   <!-- Bootstrap core CSS -->
   <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto1:wght@500&display=swap" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -71,7 +73,6 @@
 					    type="button"
               data-text="menu"
               data-toggle="collapse">
-				Menu
 				<i class="fas fa-bars"></i>
 			</button>
 			
@@ -96,7 +97,7 @@
 						<span onclick="scrollToSection('#support');"
                   class="text-translation"
                   data-text="support">
-                  Підтримай нас!
+                  Підтримай нас
             </span>
 					</li>
 					<li class="nav-item">
@@ -213,7 +214,7 @@
                 Найкосмічніша лонгборд подія літа, що вчетверте пройде серед пагорбів села Круглик Київської області. Туди злетяться астронавти з усієї галактики, щоб повеселитись і позмагатись у мистецтві швидкісних та стильних спусків з даунхілів. 
             </h2>
             <div id="video-block">
-                <iframe id="video-frame" src="https://www.youtube.com/embed/-Xwr6dJmXyo"
+                <iframe id="video-frame" src="https://www.youtube.com/embed/hw1sJMdR84U"
                     width="100%"
                     height="auto"
                     frameborder="0"
@@ -424,9 +425,9 @@
 					</li>
 				</ul>
 				<div class="col-md-8 locations-map desktop">
-					<div id="scene-pin-group" class="pin-group" data-id="desktop-scene">
+					<div id="scene-pin-group" class="pin-group map-pin-active" data-id="desktop-scene">
 						<i class="scene-bg map-pin fas fa-map-marker map-pin-bg"></i>
-						<i class="scene-img map-pin fas fa-guitar map-pin-img map-pin-active"></i>
+						<i class="scene-img map-pin fas fa-guitar map-pin-img"></i>
 					</div>
 					<div id="food-pin-group" class="pin-group" data-id="desktop-food">
 						<i class="map-pin fas map-pin-bg fa-map-marker"></i>
@@ -541,14 +542,24 @@
 						<img src="img/Button-volunteer.png" alt="become volunteer">
 					</div>
 					<p class="support-block-description support-text-description text-translation" data-text="volunteer-describe">Допоможи при підготовці фестивалю, його розгортанні та згортанні. Для волонтерів вхід безкоштовний.</p>
-					<button id="volunteer-btn" class="support-btn text-translation" data-text="volunteer">Стань волонтером</button>
+					<a id="volunteer-btn" href="https://docs.google.com/forms/d/1NIEkpf1lgNXHCeldFvWXn_n5C1ONh6NgTnk2ua07zN8/edit" class="support-btn text-translation" 
+						target="_blank"
+            data-text="volunteer"
+						class="text-translation reg-btn reg-btn-nav reg-btn-rider reg-btn-rider-nav">
+						Стань волонтером
+					</a>
 				</div>
         <div class="col-xs-12 col-lg-6">
           <div class="support-image support-img-block">
             <img src="img/button_donat_preview.png" alt="donate">
           </div>
 		  <p class="support-block-description support-text-description" data-text="donate-describe">Допоможи нам зібрати гроші, щоб провести Moon Race 4/2020 на повну!</p>
-		  <button id="donate-btn" class="support-btn text-translation" data-text="donate">Задонать по саму рампу!</button>
+		  <a id="donate-btn" href="https://secure.wayforpay.com/payment/DonateForMoonRace4 " class="support-btn text-translation" 
+						target="_blank"
+            data-text="donate"
+						class="text-translation reg-btn reg-btn-nav reg-btn-rider reg-btn-rider-nav">
+						Задонать по саму рампу!
+					</a>
         </div>
 			</div>
 		</div>

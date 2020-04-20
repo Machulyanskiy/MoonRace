@@ -312,18 +312,20 @@ $(function() {
 			// const iconBlock = $(this).parent();
 			// iconBlock.find('.pin-active').show();
 			// iconBlock.find('.pin-default').hide();
+			const pinGroup = $(this).parents('.pin-group');
+			console.log('// $(this) ', $(this), $('.pin-group').not(pinGroup))
+			pinGroup.addClass('map-pin-active');
+			$('.pin-group').not(pinGroup).removeClass('map-pin-active');
 
-			$(this).addClass('map-pin-active');
-			$('.map-pin').not(this).removeClass('map-pin-active');
-
-			const activeLocation = $(this).data('id');
+			const activeLocation = $(this).parents('.pin-group').data('id');
+			console.log('activeLocation ', $(`#${activeLocation}`));
 			$(`#${activeLocation}`).show();
 			$('.location-description-container').not(`#${activeLocation}`).hide();
 		});
 
-		$('.map-pin').click(function() {
+		/* $('.map-pin').click(function() {
 			$('#scene-pin-group').addClass('map-pin-active');
-		});
+		}); */
 
 		$('#menu-btn').click(function() {
 			$('#navbarResponsive').toggle();

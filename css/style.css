@@ -41,7 +41,7 @@
     src: url('../webfonts/Roboto-Thin.ttf');
   } */
 
-/* @keyframes rotateStart {
+@keyframes rotateStart {
     0% { transform: rotate(180deg); }
     100% { transform: rotate(0deg); }
 }
@@ -60,7 +60,7 @@
 @-ms-keyframes rotateStart {
     0% { -o-transform: rotate(180deg); }
     100% { -o-transform: rotate(0deg); }
-} */
+}
 
 * {
     padding: 0;
@@ -110,18 +110,20 @@ section {
 }
 
 @media (max-width: 991px) {
-
     h1 {
-        font-family: "Verdana";
-        font-size: 10vw;
+        font-family: "Ubuntu";
+        /* font-size: 35pt; */
+        font-size: 2.52vw;
+        font-weight: 200;
+        opacity: 0.9;
     }
 
     h2 {
-        font-size: 4vw;
+        font-size: 1.77vw;
     }
 
     h3 {
-        font-size: 3vw;
+        font-size: 0.9vw;
     }
 
     #welcome-description {
@@ -387,18 +389,38 @@ section {
         padding: 5vh 0 10vh;
         color: white;
     }
+
+    .support-img-block img {
+        width: 100%
+    }
+
+    .support-text-description {
+        font-family: "Verdana";
+        color: #162136;
+        opacity: 0.65;
+        font-weight: 500;
+        /* font-size: 14pt; */
+        font-size: 5.1vw;
+    }
+
+    .group-block-description {
+        /* font-size: 14pt; */
+        font-size: 5.1vw;
+    }
 }
 
 @media (min-width: 992px) {
     body {
         font-family: "Verdana";
         font-weight: 1;
-        font-size: 14pt;
+        /* font-size: 14pt; */
+        font-size: 1vw;
     }
 
     h1 {
         font-family: "Ubuntu";
-        font-size: 35pt;
+        /* font-size: 35pt; */
+        font-size: 2.52vw;
         font-weight: 200;
         opacity: 0.9;
     }
@@ -425,7 +447,8 @@ section {
     }
 
     .notes {
-        font-size: 12pt;
+        /* font-size: 12pt; */
+        font-size: 0.86vw;
     }
 
     #reg-block {
@@ -527,6 +550,7 @@ section {
     }
 
     .location-description-block {
+        width: 100%;
         background-image: linear-gradient(rgba(33, 37, 41, 0), rgba(33, 37, 41, 0.6), rgba(33, 37, 41, 0.6),rgba(33, 37, 41, 0.6), rgba(33, 37, 41, 0.7), rgba(33, 37, 41, 0.8), rgba(33, 37, 41, 1));
         text-align: center;
         padding: 2vh 5vw 10%;
@@ -564,6 +588,20 @@ section {
         padding: 7vh 0 6vh;
         color: white;
     }
+
+    .support-text-description {
+        font-family: "Verdana";
+        color: #162136;
+        opacity: 0.65;
+        font-weight: 500;
+        /* font-size: 14pt; */
+        font-size: 1vw;
+    }
+
+    .group-block-description {
+        /* font-size: 14pt; */
+        font-size: 1vw;
+    }
 }
 
 #welcome-description p{
@@ -572,17 +610,20 @@ section {
 
 .action-notes {
     color: #FAE07F;;
-    font-size: 10pt;
+    /* font-size: 10pt; */
+    font-size: 0.72vw;
     letter-spacing: 1px;
     opacity: 0.85;
 }
 
 #welcome-title {
-    font-size: 61pt;
+    /* font-size: 61pt; */
+    font-size: 4.35vw;
 }
 
 #welcome-date {
-    font-size: 16pt;
+    font-size: 1.15vw;
+   /*  font-size: 16pt; */
     margin: 0;
 }
 
@@ -695,6 +736,7 @@ section {
 }
 
 #menu-btn {
+    border-color: white;
     position: absolute;
     right: 5%;
 }
@@ -791,9 +833,9 @@ section {
     margin-left: -0.5vh;
     width: 31vh;
     height: 31vh; */
-    /* transform: rotateStart;
+    transform: rotateStart;
     animation-name: rotateStart;
-    animation-duration: 1s; */
+    animation-duration: 1s;
     width: 28vh;
     height: 28vh;
     margin-top: 1vh;
@@ -1048,7 +1090,8 @@ section {
 
 .sub-title {
     font-family: "Verdana";
-    font-size: 16pt;
+    /* font-size: 16pt; */
+    font-size: 1.15vw;
     padding: 0;
     color: #162136;
     opacity: 0.65;
@@ -1082,7 +1125,8 @@ section {
     margin: 1.5rem 0 1rem;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-size: 16pt;
+    /* font-size: 16pt; */
+    font-size: 1.15vw;
 }
 
 .text-block-description {
@@ -1096,7 +1140,6 @@ section {
     color: #162136;
     opacity: 0.65;
     font-weight: 999;
-    font-size: 14pt;
 }
 
 .text-sub-description {
@@ -1125,6 +1168,26 @@ section {
     /* background-color: antiquewhite; */
 }
 
+#chill-pin-group{
+    top: 34%;
+    left: 80%;
+}
+
+#camp-pin-group {
+    top: 4%;
+    left: 73%;
+}
+
+#art-pin-group {
+    top: 13%;
+    left: 33%;
+}
+
+#food-pin-group {
+    top: 46%;
+    left: 16%;
+}
+
 .group-img {
     width: 100%;
 }
@@ -1136,7 +1199,8 @@ section {
 
 .groups-genre-title {
     margin: 1rem 0 3rem;
-    font-size: 16pt;
+    /* font-size: 16pt; */
+    font-size: 1.15vw;;
     letter-spacing: 2px;
     /* color: grey; */
     color: #162136;
@@ -1194,33 +1258,56 @@ section {
 }
 
 .map-pin-bg {
-    width: 100%;
-    height: 100%;
+    /* margin: 1vh; */
+    font-size: 5vh;
+    /* width: 100%;
+    height: 100%; */
     color: white;
+    font-size: 13vh;
 }
 
 .pin-group {
     position: absolute;
-    width: 10%;
-    height: 30%;
+    /* width: 10%;
+    height: 30%; */
 }
 
 #scene-pin-group {
-    top: 40%;
-    left: 50%
+    top: 49%;
+    left: 43%;
 }
 
 #info-pin-group {
-    top: 4%;
-    left: 9%;
+    top: 11%;
+    left: 10%;
+}
+
+#info-pin-group>.map-pin-img {
+    margin: 2vh 4vh;
+}
+
+.map-pin-img.fa-info {
+    margin: 2vh 4vh;
+}
+.map-pin-img.fa-apple-alt,
+.map-pin-img.fa-paint-brush,
+.map-pin-img.fa-guitar  {
+    margin: 2vh 2.5vh;
+}
+
+.map-pin-img.fa-campground, 
+.map-pin-img.fa-couch {
+    margin: 2vh 2vh;
 }
 
 .map-pin-img {
+    margin: 1vh;
+    font-size: 5vh;
     color: #162136;
-    font-size: 3rem;
-    height: 100%;
+    /* font-size: 3rem; */
+    /* height: 100%;
     width: 100%;
-    padding-top: 20%;
+    padding-top: 20%; */
     text-align: center;
 }
 
@@ -1240,7 +1327,8 @@ section {
 
 .location-title {
     font-family: "Ubuntu";
-    font-size: 35pt;
+    /* font-size: 35pt; */
+    font-size: 2.52vw;
     font-weight: 200;
     text-transform: uppercase;
     color: #fbae59;
@@ -1307,14 +1395,6 @@ section {
     /* padding: 0 5vw; */
 }
 
-.support-text-description {
-    font-family: "Verdana";
-    color: #162136;
-    opacity: 0.65;
-    font-weight: 500;
-    font-size: 14pt;
-}
-
 #support-container {
     margin: 0 auto;
 }
@@ -1325,9 +1405,13 @@ section {
 
 .support-btn {
     width: 60%;
-    padding: 3% 0;
+    padding: 3% 6%;
     /* border-radius: 25px; */
     letter-spacing: 1px;
+}
+
+a.support-btn {
+    text-decoration: none;
 }
 
 #volunteer-btn {

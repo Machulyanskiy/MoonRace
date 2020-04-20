@@ -286,20 +286,14 @@ $(function() {
 	// Collapse the navbar when page is scrolled
 	$(window).scroll(navbarCollapse);
 
-	/* console.log($('#slick-test'));
-	$('#slick-test').slick({
-		slidesToScroll: 1,
-		dots: true,
-		centerMode: true
-	  }); */
-
-	  $('#partners-slider').slick({
-		infinite: true,
-		slidesToShow: 4,
-		slidesToScroll: 4,
-		arrows: false,
-		dots: true
-	  });
+    $('#partners-slider').slick({
+		// adaptiveHeight: true,
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        arrows: false,
+        dots: true
+    });
 
 	  $('#groups-container').slick({
 		arrows: false,

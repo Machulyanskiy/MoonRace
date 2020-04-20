@@ -11,13 +11,14 @@
   <title>Moon Race</title>
 
   <!-- Bootstrap core CSS -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto1:wght@500&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/fontawesome.min.css" rel="stylesheet">
+  <link href="css/solid.min.css" rel="stylesheet">
   <link href="css/brands.min.css" rel="stylesheet">
-  <link href="css/regular.min.css" rel="stylesheet">
   <link href="css/slick.css" rel="stylesheet">
   <link href="css/tooltipster.css" rel="stylesheet">
-  <link href="css/solid.min.css" rel="stylesheet">
   <!-- Custom fonts for this template -->
  <!--  <link href="css/all.min.css" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
@@ -27,22 +28,30 @@
 
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet">
-
 </head>
-  
+
 <body id="page-top">
 
   <!-- Navigation -->
 	<nav id="nav-panel" class="w-100">
 		<div id="first-line" class="">
 			<div id="lang-block">
-			<span>УКР</span>
-				<span>EN</span>
+			     <span id="lang-ua" class="lang-item">УКР</span>
+		       <span id="lang-en" class="lang-item">EN</span>
 			</div>
 			<div id="social-block">
-				<a href="https://www.instagram.com/moon.race"><i class="fab fa-instagram"></i></a>
-				<a href="https://www.facebook.com/lbmoonrace/"><i class="fab fa-facebook"></i></a>
-				<a href="https://t.me/moonrace2020"><i class="fab fa-telegram"></i></a>
+        <a href="https://www.youtube.com/channel/UC4AxNBfPn0-Fiv44pWax3vA" class="social-link" target="_blank">
+          <i class="fab fa-youtube"></i>
+        </a>
+				<a href="https://www.instagram.com/moon.race" class="social-link" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+				<a href="https://www.facebook.com/lbmoonrace/" class="social-link" target="_blank">
+          <i class="fab fa-facebook"></i>
+        </a>
+				<a href="https://t.me/moonrace2020" class="social-link" target="_blank">
+          <i class="fab fa-telegram"></i>
+        </a>
 			</div>
 		</div>
 	</nav>
@@ -51,54 +60,67 @@
 			<div id="blank-triangle"></div>
 
 			<a id="logo" class="navbar-brand" onclick="scrollToSection('#page-top');">
-				<div id="blank-rectangle"></div>
-				<div id="logo-rider" class="rotate logo-item"></div>
+        <div id="blank-rectangle">
+  				<div id="logo-rider" class="rotate logo-item logo-rider-version"></div>
+        </div>
 				<div id="logo-text" class="logo-item"></div>
 			</a>
-			<button id="menu-btn" class="navbar-toggler navbar-toggler-right" 
-					type="button" data-toggle="collapse">
+
+			<button id="menu-btn"
+              class="navbar-toggler navbar-toggler-right"
+					    type="button"
+              data-text="menu"
+              data-toggle="collapse">
 				Menu
 				<i class="fas fa-bars"></i>
 			</button>
+			
+
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul id="menu-list" class="navbar-nav ml-auto">
-					<!-- <li class="nav-item">
-					<a class="nav-link  " href="#video">Програма</a>
+					<li class="nav-item">
+						<span onclick="scrollToSection('#video');"
+                  class="text-translation"
+                  data-text="program">
+                  Про Moon Race
+            </span>
 					</li>
 					<li class="nav-item">
-					<a class="nav-link  " href="#locations">Локації</a>
+						<span onclick="scrollToSection('#locations');"
+                  class="text-translation"
+                  data-text="locations">
+                  Терен фестивалю
+            </span>
 					</li>
 					<li class="nav-item">
-					<a class="nav-link  " href="#support">Підтримати</a>
+						<span onclick="scrollToSection('#support');"
+                  class="text-translation"
+                  data-text="support">
+                  Підтримай нас!
+            </span>
 					</li>
 					<li class="nav-item">
-					<a class="nav-link  " href="#contacts">Контакти</a>
-					</li> -->
-					<li class="nav-item">
-						<a onclick="scrollToSection('#video');">Програма</a>
-					</li>
-					<li class="nav-item">
-						<a onclick="scrollToSection('#locations');" >Локації</a>
-					</li>
-					<li class="nav-item">
-						<a onclick="scrollToSection('#support');" >Підтримати</a>
-					</li>
-					<li class="nav-item">
-						<a onclick="scrollToSection('#contacts');" >Контакти</a>
+						<span onclick="scrollToSection('#contacts');"
+                  class="text-translation"
+                  data-text="contact">
+                  Контакти
+            </span>
 					</li>
 				</ul>
 				<div id="nav-btns">
-					<a 	href="https://tinyurl.com/moonrace4" 
+					<a 	href="https://tinyurl.com/moonrace4"
 						id="nav-rider-btn"
-						target="_blank" 
-						class="reg-btn reg-btn-nav reg-btn-rider-nav">
+						target="_blank"
+            data-text="registration"
+						class="text-translation reg-btn reg-btn-nav reg-btn-rider reg-btn-rider-nav">
 						Зареєструватися райдером
 					</a>
 
 					<a 	href="https://secure.wayforpay.com/payment/moonrace4"
 						id="nav-ticket-btn"
-						target="_blank" 
-						class="reg-btn reg-btn-nav reg-btn-ticket">
+						target="_blank"
+            data-text="ticket"
+						class="text-translation reg-btn reg-btn-nav reg-btn-ticket">
 						Купити квиток
 					</a>
 				</div>
@@ -108,53 +130,65 @@
 
   <section id="main-block" class="full-width sec-img">
 	<div id="space-bg-img" class="welcome-img"></div>
-	<div id="planet-img" class="welcome-img"></div>
-	<!-- <div class="d-flex h-100 w-100 align-items-center"> -->
+	<div id="planet-img" class="welcome-img"><i onclick="scrollToSection('#partners');" class="fas fa-chevron-down"></i></div>
 		<div id="reg-block" class="w-35 h-100">
 			<div id="reg-block-container" class="w-100">
-				<h1>MoonRace 4</h1>
-				<h2>19 - 21 червня 2020 року</h2>
-				<h3 id="welcome-description" class="m-10-0">
-					Фестиваль лонгбордингу Moon Race 4/2020 запрошує тебе на схили села Круглик Київської області
-				</h3>
+				<h1 id="welcome-title">Moon Race 4</h1>
+				<h2 id="welcome-date" class="text-translation" data-text="welcome-dates">19 - 21 червня 2020 року</h2>
+				<p id="date-note" class="text-translation notes" data-text="date-note">*можливі зміни #самізнаєтечому</p>
+				<div id="welcome-description" class="m-10-0">
+					<p class="text-translation" data-text="welcome-description-1">Фестиваль лонгбордингу із змаганнями, схилами, слайдами та інопланетною вечіркою. Приєднуйся!</p>
+					<!-- <p class="text-translation" data-text="welcome-description-2">та інопланетною вечіркою. Приєднуйся!</p> -->
+				</div>
 				<div id="reg-block-tickets">
 					<div id="reg-ticket-block" class="reg-btn-block full-width">
-						<a href="https://secure.wayforpay.com/payment/moonrace4" target="_blank" class="reg-btn reg-btn-front reg-btn-ticket">Купити квиток</a>
-						<p>За ціною 420 грн</p>
+						<a href="https://secure.wayforpay.com/payment/moonrace4"
+               target="_blank"
+               class="reg-btn reg-btn-front reg-btn-ticket text-translation"
+               data-text="ticket">
+               Купити квиток
+            </a>
+						<p class="text-translation notes" data-text="ticket-price">За ціною 420 грн</p>
 					</div>
 					<div id="reg-rider-block" class="reg-btn-block full-width">
-						<a href="https://tinyurl.com/moonrace4" target="_blank" class="reg-btn reg-btn-front reg-btn-rider">Зареєструватися райдером</a>
-						<p>За ціною 200 грн</p>
+						<a href="https://tinyurl.com/moonrace4"
+               target="_blank"
+               class="reg-btn reg-btn-front reg-btn-rider text-translation"
+               data-text="registration">
+               Зареєструватися райдером
+            </a>
+						<p class="text-translation notes" data-text="rider-price">За ціною 250 грн</p>
 					</div>
 				</div>
 			</div>
-			
 		</div>
-		<!-- <div id="main-img" class="w-65">
-		</div> -->
-	<!-- </div> -->
-</section>
+  </section>
 
-<section id="tickets">
-	<div id="reg-ticket-block" class="reg-btn-block full-width">
-		<a href="https://secure.wayforpay.com/payment/moonrace4" target="_blank" class="reg-btn reg-btn-front reg-btn-ticket">Купити квиток</a>
-		<p>За ціною 420 грн</p>
-	</div>
-	<div id="reg-rider-block" class="reg-btn-block full-width">
-		<a href="https://tinyurl.com/moonrace4" target="_blank" class="reg-btn reg-btn-front reg-btn-rider">Зареєструватися райдером</a>
-		<p>За ціною 200 грн</p>
-	</div>
-</section>
-<!-- <div id="test" data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
-	<div><h3>1</h3></div>
-	<div><h3>2</h3></div>
-	<div><h3>3</h3></div>
-	<div><h3>4</h3></div>
-	<div><h3>5</h3></div>
-	<div><h3>6</h3></div>
-  </div> -->
+  <!-- <section id="scroll">
+    <i onclick="scrollToSection('#partners');" class="fas fa-chevron-down"></i>
+  </section> -->
 
-	
+  <section id="tickets">
+  	<div id="reg-ticket-block" class="reg-btn-block full-width">
+  		<a href="https://secure.wayforpay.com/payment/moonrace4"
+         target="_blank"
+         class="reg-btn reg-btn-front reg-btn-ticket text-translation"
+         data-text="ticket">
+         Купити квиток
+      </a>
+  		<p class="text-translation" data-text="ticket-price">За ціною 420 грн</p>
+  	</div>
+  	<div id="reg-rider-block" class="reg-btn-block full-width">
+  		<a href="https://tinyurl.com/moonrace4"
+         target="_blank"
+         class="reg-btn reg-btn-front reg-btn-rider text-translation"
+         data-text="registration">
+         Зареєструватися райдером
+      </a>
+  		<p class="text-translation" data-text="rider-price">За ціною 250 грн</p>
+  	</div>
+  </section>
+
 	<section id="partners" class="full-width pd-top-100">
 			<div id="partners-slider">
 				<div class="slider-img"><a href="" class="partner-link"><img src="img/paris.png" alt="paris longboard trucks logo"></a></div>
@@ -170,64 +204,63 @@
 	</section>
 
   <!-- Projects Section -->
-  <section id="video" class="bg-light pd-top-100">
-    <div class="align-items-center">
-		<h1>Найкосмічніша лонгборд подія літа!</h1>
-		<h2 id="video-title-description">Схили, слайди, та інопланетна вечірка</h1>
-		<div id="video-block">
-			<iframe id="video-frame" src="https://www.youtube.com/embed/-Xwr6dJmXyo"
-				width="100%"
-				height="auto"
-				frameborder="0"
-				allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
-				allowfullscreen>
-			</iframe>
-		</div>
-      <!-- Featured Project Row -->
-      <!-- <div class="row no-gutters mb-4 mb-lg-5">
-        <div class="col-xl-8 col-lg-7">
-		  <iframe  width="100%" height="500"
-			  src="https://www.youtube.com/embed/-Xwr6dJmXyo">
-			</iframe >
+    <section id="video" class="bg-light pd-top-100">
+        <div class="align-items-center">
+            <h1 class="text-translation" data-text="video-title">Про Moon Race</h1>
+            <h2 id="video-title-description"
+                class="text-translation sub-title"
+                data-text="video-description">
+                Найкосмічніша лонгборд подія літа, що вчетверте пройде серед пагорбів села Круглик Київської області. Туди злетяться астронавти з усієї галактики, щоб повеселитись і позмагатись у мистецтві швидкісних та стильних спусків з даунхілів. 
+            </h2>
+            <div id="video-block">
+                <iframe id="video-frame" src="https://www.youtube.com/embed/-Xwr6dJmXyo"
+                    width="100%"
+                    height="auto"
+                    frameborder="0"
+                    allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
         </div>
-        <div id="video-text" class="col-xl-4 col-lg-5 align-items-center">
-          <div class="text-lg-left">
-            <h4>Що тебе очікує на Moon Race 4/2020?</h4>
-          </div>
-        </div>
-      </div> -->
-    	</div>
-  	</section>
+    </section>
 
 	<section id="activity">
-		<h1 id="activity-title">Що тебе очікує?</h1>
+		<h1 id="activity-title" class="text-translation" data-text="activity-title">Що тебе очікує?</h1>
 		<div class="container">
 			<div class="row margin-bottom-5vh">
 				<div class="col-md-4">
 					<div class="img-block">
-						<img src="img/Events-downhill.png" alt="paris longboard trucks logo">
+						<img src="img/Events-downhill.png" alt="downhill activity">
 					</div>
 					<div class="text-block">
-						<h2 class="text-block-title">Даунхіл</h2>
-						<p class="text-block-description">Змагання за титул підкорювача швидкості в категоріях аматор та про.</p>
+						<h2 class="text-block-title text-translation" data-text="downhill-title">Даунхіл</h2>
+						<p class="text-block-description text-translation" data-text="downhill-description">
+							Змагання за титул короля швидкості у категоріях Amateur і Pro.  
+						</p>
+						<p class="notes action-notes text-translation" data-text="action-note">Зареєстрованим райдерам квиткок за спеціальною ціною. </p>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="img-block">
-						<img src="img/Events-freeride.png" alt="paris longboard trucks logo">
+						<img src="img/Events-freeride.png" alt="freeride activity">
 					</div>
 					<div class="text-block">
-						<h2 class="text-block-title">Фрірайд</h2>
-						<p class="text-block-description">Скажена швидкість, слайди та визначення власника найконтрольованіших коліс.</p>
+						<h2 class="text-block-title text-translation" data-text="freeride-title">Фрірайд</h2>
+						<p class="text-block-description text-translation" data-text="freeride-description">
+							Змагання для тих, хто вривається по слайдах і має стиль.
+						</p>
+						<p class="notes action-notes text-translation" data-text="action-note">Зареєстрованим райдерам квиткок за спеціальною ціною. </p>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="img-block">
-						<img src="img/Events-fun-contests.png" alt="paris longboard trucks logo">
+						<img src="img/Events-fun-contests.png" alt="fun contests activity">
 					</div>
 					<div class="text-block">
-						<h2 class="text-block-title">Фанові змагання</h2>
-						<p class="text-block-description">Балансборд, слеклайни, стрільба з лука, скільки ще неймовірних активітетів вас очікує.</p>
+						<h2 class="text-block-title text-translation" data-text="fun-title"> Фанові змагання</h2>
+						<p class="text-block-description text-translation" data-text="fun-description">
+							Death Race, Bowling Slide, баланс борд, слеклайн і ще купа всього.
+            			</p>
 					</div>
 				</div>
 			</div>
@@ -235,20 +268,24 @@
 				<div id="activity-2-row" class="row col-md-8">
 					<div class="col-md-6">
 						<div class="img-block">
-							<img src="img/Events-concert.png" alt="paris longboard trucks logo">
+							<img src="img/Events-concert.png" alt="live music">
 						</div>
 						<div class="text-block">
-							<h2 class="text-block-title">Гучна вечірка</h2>
-							<p class="text-block-description">Балансборд, слеклайни, стрільба з лука, скільки ще неймовірних активітетів вас очікує.</p>
+							<h2 class="text-block-title text-translation" data-text="party-title"> КОСТЮМОВАНА ВЕЧІРКА</h2>
+							<p class="text-block-description text-translation" data-text="party-description">
+								Ввірвемось так, щоб нас почули на Місяці!
+              </p>
 						</div>
 					</div>
 					<div class="col-md-6">
 						<div class="img-block">
-							<img src="img/Events-master-class.png" alt="paris longboard trucks logo">
+							<img src="img/Events-master-class.png" alt="saturated program">
 						</div>
 						<div class="text-block">
-							<h2 class="text-block-title">Насичена програма</h2>
-							<p class="text-block-description">Майстеркласи, лекції та кінопоказ.</p>
+							<h2 class="text-block-title text-translation" data-text="other-activity-title">МАЙСТЕР -КЛАСИ</h2>
+							<p class="text-block-description text-translation" data-text="other-activity-description">
+								 І не тільки! Подивимось скейт-відео, навчимось крафтити, шейпити, флексити і чілити.
+              </p>
 						</div>
 					</div>
 				</div>
@@ -257,51 +294,57 @@
 	</section>
 
 	<section id="groups">
-		<h1 id="groups-title">Гурти</h1>
+		<h1 id="groups-title" class="text-translation" data-text="groups-title">Музику гратимуть</h1>
 		<div id="groups-container">
 			<div id="slide-1" class="slide">
 				<div class="group-desktop">
 					<div class="col-md-7 groups-img-block">
-						<img class="group-img" src="img/Bands-Kraken-Landau.png" alt="paris longboard trucks logo">
+						<img class="group-img" src="img/Bands-Kraken-Landau.png" alt="KRAKEN LANDAU image">
 					</div>
 					<div class="col-md-5 groups-description-block">
 						<div class="groups-description-content">
-							<h1>KRAKEN LANDAU</h1>
+							<h1 class="group-title">KRAKEN LANDAU</h1>
 							<h2 class="groups-genre-title">SURF-ROCK, SCI-FI, SPV</h2>
-
-							<p class="text-block-description">Балансборд, слеклайни, стрільба з лука, скільки ще неймовірних активітетів вас очікує.</p>
+							<p class="text-block-description text-sub-description group-block-description text-translation" data-text="kraken-description">
+								Прибульці, які щороку висаджуються на Moon Race. Психоделічні хвилі їхнього сьорф-року захоплять кондроль над твоїм розумом і змусять несамовито танцювати!
+              </p>
 						</div>
 					</div>
 				</div>
 				<div class="group-mobile">
-					<h1>KRAKEN LANDAU</h1>
-						<img class="group-img" src="img/Bands-Kraken-Landau.png" alt="paris longboard trucks logo">
+					<h1 class="group-title">KRAKEN LANDAU</h1>
+						<img class="group-img" src="img/Bands-Kraken-Landau.png" alt="KRAKEN LANDAU image">
 						<div class="groups-description-content">
 							<h2 class="groups-genre-title">SURF-ROCK, SCI-FI, SPV</h2>
-							<p class="text-block-description">Балансборд, слеклайни, стрільба з лука, скільки ще неймовірних активітетів вас очікує.</p>
+							<p class="text-block-description text-sub-description group-block-description text-translation" data-text="kraken-description">
+								Прибульці, які щороку висаджуються на Moon Race. Психоделічні хвилі їхнього сьорф-року захоплять кондроль над твоїм розумом і змусять несамовито танцювати!
+              </p>
 						</div>
 				</div>
 			</div>
 			<div id="slide-2" class="slide">
 				<div class="group-desktop">
 					<div class="col-md-7 groups-img-block">
-						<img class="group-img" src="img/Bands-Kraken-Landau.png" alt="paris longboard trucks logo">
+						<img class="group-img" src="img/octocat.png" alt="mock group image">
 					</div>
 					<div class="col-md-5 groups-description-block">
 						<div class="groups-description-content">
-							<h1>ТВОЯ МАМКА</h1>
-							<h2 class="groups-genre-title">HARDCORE, PSYCHO</h2>
-
-							<p class="text-block-description">Балансборд, слеклайни, стрільба з лука, скільки ще неймовірних активітетів вас очікує.</p>
+							<h1 class="group-title">TO BE ANNOUNCED</h1>
+							<!-- <h2 class="groups-genre-title">HARDCORE, PSYCHO</h2> -->
+							<p class="text-block-description text-sub-description group-block-description text-translation " data-text="mock-group-description">
+								Чекаємо на повідомлення з Місяця. Щойно отримаємо, інформація про наступного виконавця з’явиться тут.
+              				</p>
 						</div>
 					</div>
 				</div>
 				<div class="group-mobile">
-					<h1>ТВОЯ МАМКА</h1>
-						<img class="group-img" src="img/Bands-Kraken-Landau.png" alt="paris longboard trucks logo">
+					<h1 class="group-title">TO BE ANNOUNCED</h1>
+						<img class="group-img" src="img/octocat.png" alt="mock group image">
 						<div class="groups-description-content">
 							<h2 class="groups-genre-title">HARDCORE, PSYCHO</h2>
-							<p class="text-block-description">Балансборд, слеклайни, стрільба з лука, скільки ще неймовірних активітетів вас очікує.</p>
+							<p class="text-block-description text-sub-description group-block-description text-translation" data-text="mock-group-description">
+								Чекаємо на повідомлення з Місяця. Щойно отримаємо, інформація про наступного виконавця з’явиться тут.
+              </p>
 						</div>
 				</div>
 			</div>
@@ -309,36 +352,102 @@
 	</section>
 
 	<section id="locations">
-		<h1 id="locations-title">ЛОКАЦІЇ</h1>
+		<h1 id="locations-title" class="text-translation" data-text="locations-title">Терен фестивалю</h1>
 		<div id="locations-container">
 			<div class="desktop">
 				<ul class="col-md-4 location-description">
 					<li id="desktop-scene"  class="scene-item location-description-container">
-						<div id="scene-desc-img" class="location-description-image"></div>
+						<div id="scene-desc-img" class="location-description-image">
+              <img src="img/Map_preview_stage.png" class="desktop-location-image-description" alt="map pin stage description">
+            </div>
 						<div class="location-description-block">
-							<h2 class="location-title">сцена</h2>
-							<p class="location-description-text">Балансборд, слеклайни, стрільба з лука, скільки ще неймовірних активітетів вас очікує.</p>
+							<h2 class="group-title location-title text-translation" data-text="scene-title">СЦЕНА</h2>
+							<p class="location-description-text text-translation" data-text="scene-description">
+								Центр тяжіння території Moon Race, де пройде вечірка і нагородження.
+              </p>
 						</div>
 					</li>
 					<li id="desktop-food" class="location-description-container">
-						<div id="food-desc-img" class="location-description-image"></div>
+						<div id="food-desc-img" class="location-description-image">
+              <img src="img/Map_preview_kitchen.png" class="desktop-location-image-description" alt="map pin food court description">
+            </div>
 						<div class="location-description-block">
-							<h2 class="location-title">сцена 22</h2>
-							<p class="location-description-text">Балансборд, слеклайни, стрільба з лука, скільки ще неймовірних активітетів вас очікує.</p>
+							<h2 class="group-title location-title text-translation" data-text="food-title">Фуд-корт</h2>
+							<p class="location-description-text text-translation" data-text="food-description">
+								Смачні вегетаріанські сніданки, обіди і вечері для справжніх космонавтів. Вартість харчування не входить у вартість квитка. 
+              </p>
 						</div>
 					</li>
 					<li id="desktop-camp" class="location-description-container">
-						<div id="camp-desc-img" class="location-description-image"></div>
+						<div id="camp-desc-img" class="location-description-image">
+              <img src="img/Map_preview_camp.png" class="desktop-location-image-description" alt="map pin camping description">
+            </div>
 						<div class="location-description-block">
-							<h2 class="location-title">сцена 33</h2>
-							<p class="location-description-text">Балансборд, слеклайни, стрільба з лука, скільки ще неймовірних активітетів вас очікує.</p>
+							<h2 class="group-title location-title text-translation" data-text="camp-title">Кемп</h2>
+							<p class="location-description-text text-translation" data-text="camp-description">
+								Затишний дубовий гай зі слеклайном, ліхтариками, гамаками і місцем під ватру чекає на твій намет.
+              </p>
+						</div>
+					</li>
+          <li id="desktop-chill"  class="location-description-container">
+						<div id="chill-desc-img" class="location-description-image">
+              <img src="img/Map_preview_chill.png" class="desktop-location-image-description" alt="map pin chill zone description">
+            </div>
+						<div class="location-description-block">
+							<h2 class="group-title location-title text-translation" data-text="chill-title">Чіл-зона</h2>
+							<p class="location-description-text text-translation" data-text="chill-description">
+								Місце, де тобі буде затишно і чілово.
+              </p>
+						</div>
+					</li>
+					<li id="desktop-art" class="location-description-container">
+						<div id="art-desc-img" class="location-description-image">
+              <img src="img/Map_preview_artzone.png" class="desktop-location-image-description" alt="map pin art court description">
+            </div>
+						<div class="location-description-block">
+							<h2 class="location-title text-translation" data-text="art-title">Арт-зона</h2>
+							<p class="location-description-text text-translation" data-text="art-description">
+                Балансборд, слеклайни, стрільба з лука, скільки ще неймовірних активітетів вас очікує.
+              </p>
+						</div>
+					</li>
+					<li id="desktop-info" class="location-description-container">
+						<div id="info-desc-img" class="location-description-image">
+              <img src="img/Map_preview_info.png" class="desktop-location-image-description" alt="map pin infoing description">
+            </div>
+						<div class="location-description-block">
+							<h2 class="location-title text-translation" data-text="info-title">ІНФОТОЧКА</h2>
+							<p class="location-description-text text-translation" data-text="info-description">
+								Портал в Moon Race. Тут можна знайти мерч, квитки, розетку і карту фестивалю.
+              </p>
 						</div>
 					</li>
 				</ul>
 				<div class="col-md-8 locations-map desktop">
-					<i data-id="desktop-scene" class="scene-pin map-pin fas fa-map-marker"></i>
-					<i data-id="desktop-food" class="food-pin map-pin fas fa-map-marker map-pin-active"></i>
-					<i data-id="desktop-camp" class="camp-pin map-pin fas fa-map-marker"></i>
+					<div id="scene-pin-group" class="pin-group" data-id="desktop-scene">
+						<i class="scene-bg map-pin fas fa-map-marker map-pin-bg"></i>
+						<i class="scene-img map-pin fas fa-guitar map-pin-img map-pin-active"></i>
+					</div>
+					<div id="food-pin-group" class="pin-group" data-id="desktop-food">
+						<i class="map-pin fas map-pin-bg fa-map-marker"></i>
+						<i class="map-pin fas map-pin-img fa-apple-alt"></i>
+					</div>
+					<div id="camp-pin-group" class="pin-group" data-id="desktop-camp">
+						<i class="map-pin fas map-pin-bg fa-map-marker"></i>
+						<i class="map-pin fas map-pin-img fa-campground"></i>
+					</div>
+          			<div id="chill-pin-group" class="pin-group" data-id="desktop-chill">
+						  <i class="map-pin fas map-pin-bg fa-map-marker"></i>
+						  <i class="map-pin fas map-pin-img fa-couch"></i>
+						</div>
+					<div id="art-pin-group" class="pin-group" data-id="desktop-art">
+						<i class="map-pin fas map-pin-bg fa-map-marker"></i>
+						<i class="map-pin fas map-pin-img fa-paint-brush"></i>
+					</div>
+					<div id="info-pin-group" class="pin-group" data-id="desktop-info">
+						<i class="map-pin fas map-pin-bg fa-map-marker"></i>
+						<i class="map-pin fas map-pin-img fa-info"></i>
+					</div>
 				</div>
 			</div>
 			<div class="mobile">
@@ -368,40 +477,52 @@
 						<i data-id="mobile-info" class="map-pin info-pin-default pin-default mobile-pin"></i>
 					</div>
 				</div>
-				<ul class="col-md-4 location-description mobile">
+				<ul class="col-xs-4 location-description mobile">
 					<li id="mobile-scene" class="scene-item location-description-container">
 						<div id="scene-desc-img" class="location-description-image"></div>
 						<div class="location-description-block">
-							<h2 class="location-title">сцена</h2>
-							<p class="location-description-text">Балансборд, слеклайни, стрільба з лука, скільки ще неймовірних активітетів вас очікує.</p>
+							<h2 class="location-title text-translation" data-text="scene-title">сцена</h2>
+							<p class="location-description-text text-translation" data-text="scene-description">
+                Балансборд, слеклайни, стрільба з лука, скільки ще неймовірних активітетів вас очікує.
+              </p>
 						</div>
 					</li>
 					<li id="mobile-food" class="food-item location-description-container">
 						<div id="food-desc-img" class="location-description-image"></div>
-						<h2 class="location-title">сцена 22</h2>
-						<p class="location-description-text">Балансборд, слеклайни, стрільба з лука, скільки ще неймовірних активітетів вас очікує.</p>
+						<h2 class="location-title text-translation" data-text="food-title">сцена 22</h2>
+						<p class="location-description-text text-translation" data-text="food-description">
+              Балансборд, слеклайни, стрільба з лука, скільки ще неймовірних активітетів вас очікує.
+            </p>
 					</li>
 					<li id="mobile-camp" class="camp-item location-description-container">
 						<div id="camp-desc-img" class="location-description-image"></div>
-						<h2 class="location-title">сцена 33</h2>
-						<p class="location-description-text">Балансборд, слеклайни, стрільба з лука, скільки ще неймовірних активітетів вас очікує.</p>
+						<h2 class="location-title text-translation" data-text="camp-title">сцена 33</h2>
+						<p class="location-description-text text-translation" data-text="camp-description">
+              Балансборд, слеклайни, стрільба з лука, скільки ще неймовірних активітетів вас очікує.
+            </p>
 					</li>
 					<li id="mobile-art" class="art-item location-description-container">
 						<div id="art-desc-img" class="location-description-image"></div>
 						<div class="location-description-block">
-							<h2 class="location-title">сцена</h2>
-							<p class="location-description-text">Балансборд, слеклайни, стрільба з лука, скільки ще неймовірних активітетів вас очікує.</p>
+							<h2 class="location-title text-translation" data-text="art-title">сцена</h2>
+							<p class="location-description-text text-translation" data-text="art-description">
+                Балансборд, слеклайни, стрільба з лука, скільки ще неймовірних активітетів вас очікує.
+              </p>
 						</div>
 					</li>
 					<li id="mobile-chill" class="chill-item location-description-container">
 						<div id="chill-desc-img" class="location-description-image"></div>
-						<h2 class="location-title">сцена 22</h2>
-						<p class="location-description-text">Балансборд, слеклайни, стрільба з лука, скільки ще неймовірних активітетів вас очікує.</p>
+						<h2 class="location-title text-translation" data-text="chill-title">сцена 22</h2>
+						<p class="location-description-text text-translation" data-text="chill-description">
+              Балансборд, слеклайни, стрільба з лука, скільки ще неймовірних активітетів вас очікує.
+            </p>
 					</li>
 					<li id="mobile-info" class="info-item location-description-container">
 						<div id="info-desc-img" class="location-description-image"></div>
-						<h2 class="location-title">сцена 33</h2>
-						<p class="location-description-text">Балансборд, слеклайни, стрільба з лука, скільки ще неймовірних активітетів вас очікує.</p>
+						<h2 class="location-title text-translation" data-text="info-title">сцена 33</h2>
+						<p class="location-description-text text-translation" data-text="info-description">
+              Балансборд, слеклайни, стрільба з лука, скільки ще неймовірних активітетів вас очікує.
+            </p>
 					</li>
 				</ul>
 			</div>
@@ -410,80 +531,30 @@
 
 	<section id="support">
 		<div id="support-container" class="col-md-8">
-			<h1 id="support-title">Підтримати Moon Race</h1>
-			<p id="support-title-description">Moon Race це некомерційний фестиваль, організований волонтерами лонгбордистами ти можеш стати членом нашої команди або підтримати нас фінансово</p>
+			<h1 id="support-title" class="text-translation" data-text="support-title">Підтримай нас</h1>
+			<p id="support-title-description" class="sub-title text-translation support-text-description" data-text="support-description">
+				Moon Race — це некомерційний фестиваль, організований командою ентузіастів-лонгбордистів. Якщо тобі теж небайдужий лонгбординг, ти можеш підтримати нас грошовим донатом або приєднатись до команди волонтерів.
+      </p>
 			<div id="support-blocks">
 				<div class="col-xs-12 col-lg-6">
-					<div class="volunteer-block support-image img-block">
-						<img src="img/Button-volunteer.png" alt="paris longboard trucks logo">
+					<div class="volunteer-block support-image support-img-block">
+						<img src="img/Button-volunteer.png" alt="become volunteer">
 					</div>
-					<button id="volunteer-btn" class="support-btn">Стати волонтером</button>
+					<p class="support-block-description support-text-description text-translation" data-text="volunteer-describe">Допоможи при підготовці фестивалю, його розгортанні та згортанні. Для волонтерів вхід безкоштовний.</p>
+					<button id="volunteer-btn" class="support-btn text-translation" data-text="volunteer">Стань волонтером</button>
 				</div>
-				<div class="col-xs-12 col-lg-6">
-					<div class="support-image img-block">
-						<img src="img/Button-Donut.png" alt="paris longboard trucks logo">
-					</div>
-					<button id="donate-btn" class="support-btn">Донат</button>
-				</div>
+        <div class="col-xs-12 col-lg-6">
+          <div class="support-image support-img-block">
+            <img src="img/button_donat_preview.png" alt="donate">
+          </div>
+		  <p class="support-block-description support-text-description" data-text="donate-describe">Допоможи нам зібрати гроші, щоб провести Moon Race 4/2020 на повну!</p>
+		  <button id="donate-btn" class="support-btn text-translation" data-text="donate">Задонать по саму рампу!</button>
+        </div>
 			</div>
 		</div>
 	</section>
 
-	<!-- <section id="place" class="full-width">
-		<div id="place-container" class="container col-md-12 display-flex">
-			<div class="col-md-5">
-				<div class="place-img-block">
-					<img src="img/vert1.jpg" alt="Zhenya">
-					<div class="place-front-view">
-						<div class="place-view-bg"></div>
-						<span class="place-view-text">змагання</span>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-7">
-				<div class="place-img-block">
-					<img src="img/big-hor1.jpg" class="default" alt="Zhenya">
-					<div class="change">
-						<h2>Здоровенькі були</h2>
-						</br>
-						<p>тут взяуу</p>
-					</div>
-				</div>
-				<div class="col-md-12 display-flex">
-					<div class="col-md-6">
-						<div class="place-img-block">
-							<img src="img/big-hor2.jpg" class="default" alt="Zhenya">
-							<div class="change">
-								<p>тут прихавауу</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="place-img-block">
-							<img src="img/dance.jpg" class="default" alt="Zhenya">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> -->
-	
-	<!-- <section id="registration">
-		<h1 id="reg-title"> РЕЄСТРАЦІЯ </h1>
-	</section>
-	
-	<section id="bros">
-		<div class="col-md-12 display-flex text-center">
-			<div class="col-md-6">
-				<h2 class="bro-title"> СТАТИ ПАРТНЕРОМ </h2>
-			</div>
-			<div class="col-md-6">	
-				<h2 class="bro-title"> ДОНАТ </h2>
-			</div>
-		</div>
-	</section>  -->
-
-  <section id="contacts">
+  <!-- <section id="contacts">
 	<div class="container display-flex">
 		<div class="col-sm-8">
 			<iframe style="width:100%;" src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d3022.3789669138528!2d30.518171716907442!3d50.43164446862468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e2!4m3!3m2!1d50.4322093!2d30.516669399999998!4m3!3m2!1d50.4311528!2d30.521680399999997!5e0!3m2!1sen!2sua!4v1457736869310" width="600" height="450" frameborder="0" allowfullscreen=""></iframe>		</div>
@@ -508,23 +579,80 @@
 			</ul>
 		</div>
 	</div>
+</section> -->
+<section id="contacts" class="bg-light">
+	<div class="container">
+		<div id="contact-block" class="col-xl-8">
+			<h1 id="contacts-title" class="text-translation" data-text="contacts-title">Контакти</h1>
+			<div id="contact-email" class="text-center">
+				<span class="contact-text-left text-translation" data-text="contacts-faq">Є питання? Напиши нам!</span>
+				<span class="contact-text-right">info@moonrace.online</span>
+			</div>
+			<div id="contact-socials" class="text-center">
+				<span class="contact-text-left text-translation " data-text="contacts-follow">Слідкуй за останніми новинами Moon Race</span>
+				<span class="contact-text-right">
+					<a href="https://www.youtube.com/channel/UC4AxNBfPn0-Fiv44pWax3vA" class="social-link contact-social-link" target="_blank">
+						<i class="fab fa-youtube"></i>
+					</a>
+							<a href="https://www.instagram.com/moon.race" class="social-link contact-social-link" target="_blank">
+						<i class="fab fa-instagram"></i>
+					</a>
+							<a href="https://www.facebook.com/lbmoonrace/" class="social-link contact-social-link" target="_blank">
+						<i class="fab fa-facebook"></i>
+					</a>
+							<a href="https://t.me/moonrace2020" class="social-link contact-social-link" target="_blank">
+						<i class="fab fa-telegram"></i>
+					</a>
+				</span>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- <div class="container display-flex">
+		<div class="col-sm-8">
+			<iframe style="width:100%;" src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d3022.3789669138528!2d30.518171716907442!3d50.43164446862468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e2!4m3!3m2!1d50.4322093!2d30.516669399999998!4m3!3m2!1d50.4311528!2d30.521680399999997!5e0!3m2!1sen!2sua!4v1457736869310" width="600" height="450" frameborder="0" allowfullscreen=""></iframe>		</div>
+		<div class="col-sm-4 cont-info">
+			<h2> Контакти: </h2>
+			<p><i class="fa fa-envelope-o"></i>
+			   Email: <strong class="green">lbmoon.race@gmail.com</strong>
+			</p>
+			<p><i class="fa fa-phone"></i>
+						   Phones:  +38(093)937-23-15
+			</p>
+			<ul class="list-unstyled list-inline list-social-icons social-contacts">
+				<li>
+					<a href="https://www.facebook.com/LbKSchool/" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
+				</li>
+				<li>
+					<a href="http://vk.com/lbkschool" target="_blank"><i class="fa fa-vk fa-fw fa-2x"></i></a>
+				</li>
+				<li>
+					<a href="https://instagram.com/lbkschool" target="_blank"><i class="fa fa-instagram fa-fw fa-2x"></i></a>
+				</li>
+			</ul>
+		</div>
+	</div> -->
 </section>
 
 <section id="see-you">
 	<div id="see-you-container">
-		<div class="img-block">
-			<img src="img/paris.png" alt="paris longboard trucks logo">
+		<div id="see-you-image-block" class="img-block">
+			<img class="see-you-content" src="img/see-ya.png" alt="see you later background">
+			<span id="copyright">
+				Copyright &copy; Moon Race 2020
+			</span>
 		</div>
-		<h2>До зустірчі на Moon Race!</h2>
+		<!-- <h2>До зустірчі на Moon Race!</h2> -->
 	</div>
 </section>
   <!-- Footer -->
-  <footer class="bg-black small text-center text-white-50">
+  <!-- <footer class="bg-black small text-center text-white-50">
     <div class="container">
       Copyright &copy; Your Website 2019
     </div>
-  </footer>
-  
+  </footer> -->
+
   <script src="js/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/tooltipster.min.js"></script>
@@ -532,9 +660,11 @@
   <script src="js/main.js"></script>
 
   <!-- <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-   
+
   <script src="js/grayscale.js"></script> -->
 
 </body>
 
 </html>
+
+

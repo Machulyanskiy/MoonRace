@@ -292,55 +292,84 @@ $(function() {
         slidesToShow: 4,
         slidesToScroll: 4,
         arrows: false,
-        dots: true
+		dots: true,
+		speed: 2000,
+		/* autoplay: true,
+		autoplaySpeed: 5000, */
+		pauseOnFocus: true,
+		responsive: [
+			{
+			  breakpoint: 1024,
+			  settings: {
+				slidesToShow: 3,
+				slidesToScroll: 3
+			  }
+			},
+			{
+			  breakpoint: 600,
+			  settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2
+			  }
+			}
+			// You can unslick at a given breakpoint now by adding:
+			// settings: "unslick"
+			// instead of a settings object
+		  ]
     });
 
-	  $('#groups-container').slick({
-		arrows: false,
-		dots: true
-	  });
+	$('#groups-container').slick({
+	arrows: false,
+	dots: true
+	});
 
-		$('.map-pin').click(function() {
-			// $('.pin-active').hide();
-			//
-			// const iconBlock = $(this).parent();
-			// iconBlock.find('.pin-active').show();
-			// iconBlock.find('.pin-default').hide();
-			const pinGroup = $(this).parents('.pin-group');
-			console.log('// $(this) ', $(this), $('.pin-group').not(pinGroup))
-			pinGroup.addClass('map-pin-active');
-			$('.pin-group').not(pinGroup).removeClass('map-pin-active');
+	function changeLocation(elem) {
+		const pinGroup = $(elem).parents('.pin-group');
+		$('.pin-group').removeClass('map-pin-active');
+		$(elem).addClass('map-pin-active');
 
-			const activeLocation = $(this).parents('.pin-group').data('id');
-			console.log('activeLocation ', $(`#${activeLocation}`));
-			$(`#${activeLocation}`).show();
-			$('.location-description-container').not(`#${activeLocation}`).hide();
-		});
+		const activeLocation = $(elem).data('class');
+		$(`.${activeLocation}`).show();
+		$('.location-description-container').not(`.${activeLocation}`).hide();
+	}
 
-		/* $('.map-pin').click(function() {
-			$('#scene-pin-group').addClass('map-pin-active');
-		}); */
+	$('.pin-group').click(function() {
+		changeLocation(this);
+	});
 
-		$('#menu-btn').click(function() {
-			$('#navbarResponsive').toggle();
-		});
+	$('.pin-group').on('touchstart', function() {
+		changeLocation(this);
+	});
 
-		$('.nav-item').click(function() {
-			if ($('#navbarResponsive').is(":visible")) {
-				$('#navbarResponsive').hide();
-			}
-		});
+	/* $('.map-pin').click(function() {
+		$('#scene-pin-group').addClass('map-pin-active');
+	}); */
 
-	  const movementStrength = 25;
-		const height = movementStrength / $(window).height();
-		const width = movementStrength / $(window).width();
-		$("#top-image").mousemove(function(e){
-		          const pageX = e.pageX - ($(window).width() / 2);
-		          const pageY = e.pageY - ($(window).height() / 2);
-		          const newvalueX = width * pageX * -1 - 25;
-		          const newvalueY = height * pageY * -1 - 50;
-		          $('#top-image').css("background-position", newvalueX+"px     "+newvalueY+"px");
-		});
+	$('#menu-btn').click(function() {
+		$('#navbarResponsive').toggle();
+	});
+
+	$('.nav-item').click(function() {
+		if ($('#navbarResponsive').is(":visible")) {
+			$('#navbarResponsive').hide();
+		}
+	});
+
+	const movementStrength = 25;
+	const height = movementStrength / $(window).height();
+	const width = movementStrength / $(window).width();
+	$("#top-image").mousemove(function(e){
+				const pageX = e.pageX - ($(window).width() / 2);
+				const pageY = e.pageY - ($(window).height() / 2);
+				const newvalueX = width * pageX * -1 - 25;
+				const newvalueY = height * pageY * -1 - 50;
+				$('#top-image').css("background-position", newvalueX+"px     "+newvalueY+"px");
+	});
+
+	$('.lang-item').click(function() {
+		$('#lang-ua').toggle();
+		$('#lang-en').toggle();
+	});
 });
 
 function scrollToSection(sectionId) {

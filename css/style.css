@@ -113,13 +113,18 @@ section {
     h1 {
         font-family: "Ubuntu";
         /* font-size: 35pt; */
-        font-size: 2.52vw;
+        /* font-size: 2.52vw; */
         font-weight: 200;
         opacity: 0.9;
+        /* font-size: 11vw; */
+    }
+
+    body {
+        font-family: "Verdana";
     }
 
     h2 {
-        font-size: 1.77vw;
+        font-family: "Verdana";
     }
 
     h3 {
@@ -135,11 +140,52 @@ section {
 
     .nav-item {
         margin-right: 3vw;
-        padding: 2vh;
+        padding: 1vh 2vh;
+        /* padding: 2vh; */
     }
 
     #menu-list {
         text-align: right;
+        margin-bottom: 5vh;
+    }
+
+    /* #space-bg-img, #planet-img {
+        display: none;
+    } */
+
+    #main-nav {
+        padding: 0px 0 0 6vw;
+    }
+
+    #main-block {
+        height: 80vh;
+        margin-top: 20vh;
+        /* display: inline-flex;
+        background-image: url(../img/header_image.png), url(../img/header_background.png);
+        background-position: bottom, center;
+        background-attachment: scroll, scroll;
+        background-size: cover, auto; */
+        /* background-repeat: no-repeat;
+       -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
+        /* position: relative;
+        height: auto;
+        min-height: 35rem;
+        padding: 15rem 0;
+        background: url(../img/main.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+       -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
+    }
+
+    #logo {
+        margin-left: 7vw;
     }
 
     #navbarResponsive {
@@ -156,12 +202,18 @@ section {
     }
 
     .welcome-img {
+        height: 100%;
+        top: 0;
+        left: 0;
         width: 100%;
-        height: 70vh;
+        /* height: 70vh; */
         position: absolute;
         background-position: bottom;
         background-attachment: scroll;
-        background-size: cover;
+       -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
     }
 
     #space-bg-img {
@@ -170,9 +222,22 @@ section {
 
     #planet-img {
         background-image: url(../img/planet-test.png);
-        background-size: contain;
+       -webkit-background-size: containt;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
         background-repeat-y: no-repeat;
     }
+
+    .reg-btn-block p {
+        margin-top: 1px;
+        text-align: right;
+        color: #e46f35;
+    }
+
+    /* .sub-title {
+        font-size: 3vw;
+    } */
 
     #reg-block {
         /* background-color: #162136; */
@@ -197,6 +262,28 @@ section {
         border-color: white;
     }
 
+    #welcome-title {
+        /* font-size: 61pt; */
+        font-size: 11vw;
+    }
+
+    #welcome-date {
+        font-size: 1rem;
+        /* font-size: 4vw; */
+    /*  font-size: 16pt; */
+        margin: 0;
+    }
+
+    #date-note {
+        /* font-size: 3vw; */
+        font-size: 0.72rem;
+        color: #FBE18C;
+    }
+
+    .text-block-title{
+        /* font-size: 4vw; */
+    }
+
     #video-block {
         margin-top: 7vh;
         padding: 0;
@@ -211,12 +298,22 @@ section {
         width: 100%;
     }
 
+    .col-md-4, .col-md-6, .col-md-8, .col-xs-12 {
+        padding: 0;
+    }
+
+    #groups .slick-dots {
+        top: 95%;
+        left: 80%;
+        width: auto;    
+    }
+
     .group-desktop, .desktop {
         display: none;
     }
 
     .groups-description-content {
-        padding-right: 10vw;
+        padding: 0 5vw;
         height: 100%;
         text-align: left;
     }
@@ -240,35 +337,64 @@ section {
         height: 47vw;
     }
 
+    .location-image-description {
+        /* margin-left: 3vw;
+        margin-top: 3vh; */
+        height: 90%;
+        margin-left: 9%;
+        margin-top: 5%;
+        display: inline-block;
+    }
+
     .location-description {
         background: url(../img/bottom-background.png);
         background-position: center;
         background-repeat: no-repeat;
         background-attachment: scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
         background-size: cover;
+    }
+
+    .location-description-text {
+        font-size: 0.5rem;
     }
 
     .location-description-container {
         width: 100%;
+        height: 55vw;
         display: inline-flex;
         /* padding: 10vh;  */
     }
 
     .location-description-block {
-        width: 45vw;
+        display: inline-block;
+        float: left;
+        height: 100%;
+        width: 45%;
+        /* width: 45vw; */
         padding: 5% 5% 0;
     }
 
-    .location-description-image {
-        width: 55vw;
-        height: 55vw;
+    .location-description-image-block {
+        display: inline-block;
+        height: 100%;
+        width: 55%;
+        float: left;
+        /* width: 55vw;
+        height: 55vw; */
         background: url(../img/Map_preview_background.png);
         background-position: center;
         background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
         background-size: cover;
     }
 
     .location-description-text {
+        font-size: .8rem;
         margin: 0;
     }
 
@@ -280,7 +406,7 @@ section {
         margin-bottom: 5vh;
     }
 
-    .scene-pin-active{
+    /* .scene-pin-active{
         background: url(../img/scene_icon_active.png);
     }
 
@@ -326,63 +452,115 @@ section {
 
     .info-pin-default{
         background: url(../img/infozone_default.png);
-    }
+    } */
 
     .mobile {
         position: relative;
     }
 
-    #mobile-scene-pin {
-        position: absolute;
+    .map-pin-bg {
+        color: white;
+        position: inherit;
+        font-size: 11vw;
+    }
+
+    .map-pin-img {
+        font-size: 3.2vw;
+        color: #162136;
+        position: inherit;
+        /* font-size: 3rem; */
+    }
+
+    .pin-group {
         height: 13vw;
         width: 9vw;
-        top: 19%;
+    }
+
+    .loc-desc-pin {
+        position: absolute;
+        top: 9vw;
+        left: 12vw;
+        font-size: 9vw;
+        color: white;
+        opacity: 0.9;
+    }
+
+
+    .chill-desc-img-pin {
+        left: 10.75vw;
+    }
+
+    .info-desc-img-pin {
+        left: 14.6vw;
+    }
+
+    .food-desc-img-pin {
+        left: 12.2vw;
+    }
+
+    .camp-desc-img-pin {
+        left: 10.7vw;
+    }
+
+    .art-img,
+    .scene-img  {
+        margin: 2.5vw 2.5vw;
+    }
+
+    .food-img {
+        margin: 2.5vw 2.7vw;
+    }
+
+    .camp-img {
+        margin: 2.5vw 2.1vw;
+    }
+
+    .chill-img {
+        margin: 2.5vw 2.12vw
+    }
+
+    .info-img {
+        margin: 2.5vw 3.54vw;
+    }
+
+    #mobile-scene-pin {
+        top: 21%;
         left: 43%;
     }
 
     #mobile-food-pin {
-        position: absolute;
-        height: 13vw;
-        width: 9vw;
         top: 19%;
         left: 16%;
     }
 
     #mobile-camp-pin {
-        position: absolute;
-        height: 13vw;
-        width: 9vw;
-        top: 0%;
+        top: 2%;
         left: 72%;
     }
 
     #mobile-art-pin {
-        position: absolute;
-        height: 13vw;
-        width: 9vw;
-        top: 4%;
+        top: 6%;
         left: 33%;
     }
 
     #mobile-chill-pin {
-        position: absolute;
-        height: 13vw;
-        width: 9vw;
-        top: 13%;
+        top: 15%;
         left: 79%;
     }
 
     #mobile-info-pin {
-        position: absolute;
-        height: 13vw;
-        width: 9vw;
-        top: 2%;
+        top: 4%;
         left: 10%;
     }
 
     .mobile-pin {
-        height: 7%;
+        height: 9%;
         width: 7%;
+    }
+
+    .location-title {
+        /* font-family: "Ubuntu"; */
+        font-size: 1.2rem;
     }
 
     #activity-title {
@@ -390,22 +568,29 @@ section {
         color: white;
     }
 
-    .support-img-block img {
+    /* .support-img-block img {
         width: 100%
-    }
+    } */
 
     .support-text-description {
         font-family: "Verdana";
         color: #162136;
         opacity: 0.65;
         font-weight: 500;
+        padding: 0 5vw;
         /* font-size: 14pt; */
-        font-size: 5.1vw;
+        /* font-size: 5.1vw; */
     }
 
     .group-block-description {
         /* font-size: 14pt; */
-        font-size: 5.1vw;
+        /* font-size: 5.1vw; */
+    }
+
+    .see-you-content {
+        display: inline-block;
+        /* height: 80%;
+        width: auto!important; */
     }
 }
 
@@ -415,6 +600,7 @@ section {
         font-weight: 1;
         /* font-size: 14pt; */
         font-size: 1vw;
+        /* font-size: 1vh; */
     }
 
     h1 {
@@ -451,6 +637,56 @@ section {
         font-size: 0.86vw;
     }
 
+    #main-block {
+        height: 80vh;
+        margin-top: 20vh;
+        display: inline-flex;
+        background-image: url(../img/header_image.png), url(../img/header_background.png);
+        background-position: bottom, center;
+        background-attachment: scroll, scroll;
+        background-size: cover, auto;
+
+        
+        /* background-repeat: no-repeat;
+       -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
+        /* position: relative;
+        height: auto;
+        min-height: 35rem;
+        padding: 15rem 0;
+        background: url(../img/main.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+       -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
+    }
+
+    /* #space-bg-img {
+        background-image: url(../img/header_background.png);
+    }
+
+    #planet-img {
+        background-image: url(../img/planet-test.png);
+       -webkit-background-size: containt;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+        background-repeat-y: no-repeat;
+    } */
+
+    #logo{
+        margin-left: 3vw;
+    }
+
+    #space-bg-img, #planet-img {
+        display: none;
+    }
+
     #reg-block {
         color: white;
         display: table;
@@ -471,6 +707,26 @@ section {
         border-color: white;
     }
 
+
+    #welcome-title {
+        /* font-size: 61pt; */
+        font-size: 4.35vw;
+    }
+
+    #welcome-date {
+        font-size: 1.15vw;
+    /*  font-size: 16pt; */
+        margin: 0;
+    }
+
+    #date-note {
+        color: #FBE18C;
+    }
+
+    .text-block-title{
+        font-size: 1.15vw;
+    }
+
     #tickets {
         display: none;
     }
@@ -482,6 +738,13 @@ section {
 
     #video-frame {
         height: 85vh;
+    }
+
+
+    #groups .slick-dots {
+        top: 85%;
+        left: 90%;
+        width: auto;    
     }
 
     .group-desktop {
@@ -519,6 +782,13 @@ section {
         display: inherit;
     }
 
+    .map-pin-img {
+        font-size: 2.5vw;
+        color: #162136;
+        position: inherit;
+        /* font-size: 3rem; */
+    }
+
     .location-description-container {
         width: 100%;
         height: 100%;
@@ -528,7 +798,10 @@ section {
         background-position: center;
         background-repeat: no-repeat;
         background-attachment: scroll;
-        background-size: cover; */
+       -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
     }
 
     .location-description {
@@ -537,16 +810,32 @@ section {
         background-position: center;
         background-repeat: no-repeat;
         background-attachment: scroll;
-        background-size: cover;
+       -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
     }
 
-    .location-description-image {
+    .location-description-image-block {
         height: 100%;
         width: 100%;
         background: url(../img/Map_preview_background.png);
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+       -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    }
+
+
+    .location-image-description {
+        /* margin-left: 3vw;
+        margin-top: 3vh; */
+        height: 90%;
+        margin-left: 9%;
+        margin-left: 2.9vw;
+        margin-top: 5%;
     }
 
     .location-description-block {
@@ -556,9 +845,20 @@ section {
         padding: 2vh 5vw 10%;
         bottom: 0;
         position: absolute;
+        padding: 0;
+
     }
 
-    .scene-pin {
+    .location-title {
+        font-family: "Ubuntu";
+        font-size: 2.52vw;
+    }
+
+    #location-description-block {
+        padding: 0;
+    }
+
+    /* .scene-pin {
         top: 27%;
         left: 43%;
     }
@@ -572,6 +872,70 @@ section {
     .camp-pin{
         top: 46%;
         left: 45%;
+    } */
+
+    .map-pin-bg {
+        /* margin: 1vh; */
+        /* font-size: 8vh; */
+        /* width: 100%;
+        height: 100%; */
+        position: inherit;
+        color: white;
+        font-size: 7.5vw;
+    }
+
+    .loc-desc-pin {
+        position: absolute;
+        top: 5vw;
+        left: 7vw;
+        font-size: 5vw;
+        color: white;
+        opacity: 0.9;
+    }
+
+
+    .chill-desc-img-pin {
+        left: 6.1vw;
+    }
+
+    .info-desc-img-pin {
+        top: 5vw;
+        left: 8.3vw;
+    }
+
+    .food-desc-img-pin {
+        top: 5vw;
+        left: 7vw;
+    }
+
+    .camp-desc-img-pin {
+        left: 6.1vw;
+    }
+
+    .art-img,
+    .scene-img  {
+        /* margin: 2vw 2.5vw; */
+        margin: 1.5vw 1.56vw;
+    }
+
+    .food-img {
+        margin: 1.5vw 1.73vw;
+    }
+
+    .camp-img {
+        margin: 1.5vw 1.24vw;
+    }
+
+    .chill-img {
+        margin: 1.5vw 1.25vw;
+    }
+
+    .info-img {
+        margin: 2.5vw 3.5vw;
+    }
+
+    .info-img {
+        margin: 1.5vw 2.37vw;
     }
 
     #support-blocks {
@@ -579,6 +943,11 @@ section {
         margin: 5vh 0 12vh;
     }
 
+
+    .support-block-description {
+        padding: 0px 2vw;
+        margin: -4vh 0 4vh;
+    }
 
     .container {
         max-width: 70vw;
@@ -598,37 +967,74 @@ section {
         font-size: 1vw;
     }
 
+
+    .groups-img-block {
+        padding-left: 0;
+        padding-right: 3vw;
+        /* background-color: antiquewhite; */
+    }
+
     .group-block-description {
         /* font-size: 14pt; */
         font-size: 1vw;
     }
+
+    .group-slide {
+        width: 100%;
+        display: inline-flex;
+    }
+
+    .see-you-content {
+        margin: 1vh 0 0 4vw;
+        height: 80%;
+        width: auto!important;
+    }
+
+    .reg-btn-block p {
+        margin-top: 1px;
+        text-align: right;
+        color: #FBE18C;
+    }
+
+    .sub-title {
+        font-size: 1.15vw;
+    }
+}
+
+.slick-dots li.slick-active button:before,
+.slick-dots li button:before {
+    color: #162136;
+}
+
+.note-yellow {
+    color: #FEE098;
+    font-size: 0.72vw;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    opacity: 0.85;
+}
+
+.note-volunteer {
+    color: #e46f35;
+    opacity: 1;
 }
 
 #welcome-description p{
     margin: 0;
 }
 
+#locations {
+    margin-top: -3.6vh;
+}
+
 .action-notes {
     color: #FAE07F;;
     /* font-size: 10pt; */
-    font-size: 0.72vw;
+    /* font-size: 0.72vw; */
+    font-size: 0.72rem;
     letter-spacing: 1px;
+    line-height: 1.2;
     opacity: 0.85;
-}
-
-#welcome-title {
-    /* font-size: 61pt; */
-    font-size: 4.35vw;
-}
-
-#welcome-date {
-    font-size: 1.15vw;
-   /*  font-size: 16pt; */
-    margin: 0;
-}
-
-#date-note {
-    color: #FBE18C;
 }
 
 #first-line {
@@ -638,7 +1044,16 @@ section {
 }
 
 .lang-item {
+    opacity: 0.65;
     cursor: pointer;
+}
+
+#lang-ua {
+    display: none;
+}
+
+.lang-item:hover {
+    opacity: 1;
 }
 
 #social-block {
@@ -658,7 +1073,7 @@ section {
 }
 
 .social-link:not(:last-child) {
-    margin-right: 5px;
+    margin-right: 1vw;
 }
 
 .map-pin:not(.pin-default.scene-pin-active) {
@@ -720,7 +1135,7 @@ section {
 } */
 
 #lang-block {
-    margin-right: 1vw;
+    margin-right: 3vw;
     /* margin-right: 1.5rem;
     margin-top: 0.1rem; */
 }
@@ -730,15 +1145,17 @@ section {
     background-color: white;
     height: 15vh;
     top: 5vh;
-    width: 100vw;
+    width: 100%;
+    padding: 0 0 0 1vw;
     /* top: 3rem; */
     /* padding: 3.5rem 1rem 2rem; */
 }
 
 #menu-btn {
-    border-color: white;
+    border-color: transparent;
     position: absolute;
     right: 5%;
+    font-size: 2.7vh;
 }
 
 .main-nav-tiny {
@@ -776,12 +1193,12 @@ section {
     height: 20vh;
     padding: 0;
     top: 5vh;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 
     /* width: 22vh;
     height: 22vh;
     padding: 0;
     top: 4vh; */
-    margin-left: 3vw;
     border-radius: 50%;
     position: absolute;
     z-index: 400;
@@ -811,6 +1228,12 @@ section {
     margin-left: 1.5vh;
     
 }
+
+/* .vertical-helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+} */
 
 #scene-test-bg {
     /* width: 100%;
@@ -863,14 +1286,20 @@ section {
     background: url(../img/logo-rider.svg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #locations-title {
     /* background: url(../img/bottom-background.png) !important;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; */
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
 }
 
 #logo-text {
@@ -886,7 +1315,10 @@ section {
     background: url(../img/logo-text.svg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .logo-item {
@@ -898,26 +1330,6 @@ section {
 
 }
 
-#main-block {
-    height: 80vh;
-    margin-top: 20vh;
-    display: inline-flex;
-    background-image: url(../img/header_image.png), url(../img/header_background.png);
-    background-position: bottom, center;
-    background-attachment: scroll, scroll;
-    background-size: cover, auto;
-    /* background-repeat: no-repeat;
-    background-size: cover; */
-	/* position: relative;
-    height: auto;
-    min-height: 35rem;
-    padding: 15rem 0;
-    background: url(../img/main.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover; */
-}
 /*
 #welcome-img{
     background: url(../img/header_image.png);
@@ -943,13 +1355,10 @@ section {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-size: cover;
-}
-
-.reg-btn-block p {
-    margin-top: 1px;
-    text-align: right;
-    color: #FBE18C;
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .reg-btn {
@@ -1014,7 +1423,10 @@ section {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-size: cover;
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #description p {
@@ -1039,13 +1451,13 @@ section {
 }
 
 #tickets {
-    margin-top: 11vh;
+    margin-top: 5vh;
     padding: 0 4%;
 }
 
 #partners {
-    /*padding: 5vh 0;*/
-    background-color: #f3f3f3;
+    padding: 5vh 0;
+    /* background-color: #f3f3f3; */
 }
 
 /* conflicts with slick styles */
@@ -1070,7 +1482,8 @@ section {
     margin: 0.75vh auto;
     max-height: 90%;
     max-width: 80%;
-    filter: opacity(80%) grayscale(70%);
+    /* filter: opacity(80%) grayscale(70%); */
+    filter: opacity(0.65);
 }
 
 .slider-img img:hover {
@@ -1091,16 +1504,13 @@ section {
     padding: 0 10%;
 }
 
-.support-block-description {
-    padding: 0px 2vw;
-    margin: -4vh 0 4vh;
-}
 
 .sub-title {
     font-family: "Verdana";
     /* font-size: 16pt; */
-    font-size: 1.15vw;
-    padding: 0;
+    /* font-size: 1.15vw; */
+    font-size: 1rem;
+    /* padding: 0; */
     color: #162136;
     opacity: 0.65;
 }
@@ -1134,7 +1544,7 @@ section {
     text-transform: uppercase;
     letter-spacing: 2px;
     /* font-size: 16pt; */
-    font-size: 1.15vw;
+    /* font-size: 1.15vw; */
 }
 
 .text-block-description {
@@ -1171,33 +1581,47 @@ section {
     /* padding: 10vh 0vh; */
 }
 
-.groups-img-block {
-    padding-right: 3vw;
-    /* background-color: antiquewhite; */
-}
-
 #chill-pin-group{
-    top: 34%;
-    left: 80%;
+    top: 9vw;
+    left: 53vw;
 }
 
-#camp-pin-group {
-    top: 4%;
-    left: 73%;
+#camp-pin-group {   
+    top: 0.5vw;
+    left: 48vw;
 }
 
 #art-pin-group {
-    top: 13%;
-    left: 33%;
+    top: 2vw;
+    left: 22vw;
 }
 
 #food-pin-group {
-    top: 46%;
-    left: 16%;
+    top: 12vw;
+    left: 10.5vw;
+}
+
+#scene-pin-group {
+    top: 14vw;
+    left: 28vw;
+}
+
+#info-pin-group {
+    top: 2.5vw;
+    left: 6.5vw;
 }
 
 .group-img {
     width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.mock-group-img {
+    width: auto;
+    height: auto;
+    margin: auto;
+    margin-right: 10%;
 }
 
 .slide {
@@ -1208,7 +1632,7 @@ section {
 .groups-genre-title {
     margin: 1rem 0 3rem;
     /* font-size: 16pt; */
-    font-size: 1.15vw;;
+    /* font-size: 1.15vw;; */
     letter-spacing: 2px;
     /* color: grey; */
     color: #162136;
@@ -1226,8 +1650,8 @@ section {
 #locations-title {
     text-align: center;
     padding: 5vh 0;
-    background: #FFAD4F;
-    color: white;
+    background: #fee098;
+    color: #e46f35;
     margin: 0;
 }
 
@@ -1241,16 +1665,14 @@ section {
     display: none
 }
 
-.desktop-location-image-description {
-    margin-left: 3vw;
-    margin-top: 3vh;
-}
-
 .locations-map {
     background: url(../img/map.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  background-size: cover;
 }
 
 .map-pin {
@@ -1258,20 +1680,15 @@ section {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    position: inherit;
-    font-size: 7rem;
+    /* font-size: 7rem; */
+    /* font-size: 7.5vw; */
+    /* position: inherit; */
     /* width: 100%;
     height: 100%; */
-}
-
-.map-pin-bg {
-    /* margin: 1vh; */
-    font-size: 5vh;
-    /* width: 100%;
-    height: 100%; */
-    color: white;
-    font-size: 13vh;
 }
 
 .pin-group {
@@ -1280,23 +1697,14 @@ section {
     height: 30%; */
 }
 
-#scene-pin-group {
-    top: 49%;
-    left: 43%;
-}
-
-#info-pin-group {
-    top: 11%;
-    left: 10%;
-}
-
-#info-pin-group>.map-pin-img {
+/* #info-pin-group>.map-pin-img {
     margin: 2vh 4vh;
 }
 
 .map-pin-img.fa-info {
     margin: 2vh 4vh;
-}
+} */
+/*
 .map-pin-img.fa-apple-alt,
 .map-pin-img.fa-paint-brush,
 .map-pin-img.fa-guitar  {
@@ -1307,21 +1715,9 @@ section {
 .map-pin-img.fa-couch {
     margin: 2vh 2vh;
 }
+ */
 
-.map-pin-img {
-    margin: 1vh;
-    font-size: 5vh;
-    color: #162136;
-    /* font-size: 3rem; */
-    /* height: 100%;
-    width: 100%;
-    padding-top: 20%; */
-    text-align: center;
-}
 
-/* .map-pin-active {
-    color: tomato;
-} */
 .pin-group.map-pin-active>.map-pin-bg {
     color: #fbae59;
 }
@@ -1330,13 +1726,9 @@ section {
     color: white;
 }
 
-.scene-item  {
-}
-
 .location-title {
     font-family: "Ubuntu";
     /* font-size: 35pt; */
-    font-size: 2.52vw;
     font-weight: 200;
     text-transform: uppercase;
     color: #fbae59;
@@ -1374,6 +1766,14 @@ section {
     /* padding-top: 7vh; */
 }
 
+.contact-text-title {
+    margin-right: 2vw;
+}
+
+.contact-text-content {
+    display: inline-block;
+}
+
 .contact-social-link {
     color: #fbae59;
     opacity: 1;
@@ -1387,16 +1787,17 @@ section {
     padding-top: 3vh; 
 }
 
+#contact-email-text {
+    color: #fbae59;
+    font-weight: 600;
+}
+
 #contact-socials {
     padding: 2vh;;
 }
 
 #contact-block {
     margin: 0 auto;
-}
-
-#contact-text-right {
-    float: right;
 }
 
 #support-title-description{
@@ -1412,10 +1813,15 @@ section {
 }
 
 .support-btn {
-    width: 60%;
+    /* width: 60%; */
+    display: inline-block;
     padding: 3% 6%;
     /* border-radius: 25px; */
     letter-spacing: 1px;
+}
+
+.mg-btm-5vh {
+    margin-bottom: 5vh;
 }
 
 a.support-btn {
@@ -1435,10 +1841,19 @@ a.support-btn {
     border: 2px solid #e26627;
 }
 
+.support-img-block img {
+    width: 100%;
+}
+
 #donate-btn {
     color: #f78953;
     background-color: #fbe598;
     border: 1px solid #fbe598;
+        /* margin-top: 2vh; */
+        /* display: block; */
+        margin: 0 auto;
+        /* margin-top: 5vh; */
+    }
 }
 
 
@@ -1451,11 +1866,6 @@ a.support-btn {
     /* height: 30vh; */
 }
 
-.see-you-content {
-    height: 80%;
-    width: auto!important;
-}
-
 .see-you-image {
     width: 100%;
 }
@@ -1466,7 +1876,10 @@ a.support-btn {
     background: url(../img/bottom-background.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #copyright {
@@ -1561,6 +1974,9 @@ a.support-btn {
 	display: flex;
 }
 
+.navbar-toggle {
+    padding: 1.25vw 1.75vw;
+}
 /* .fa-map-marker {
   z-index: 10;
 }

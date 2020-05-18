@@ -2,184 +2,196 @@ console.log("claseka");
 
 const DICTIONARY = {
 	"program" : {
-			"ua" : "Про Moon Race",
-			"en" : "About Moon Race"
+		"ua" : "Про Moon Race",
+		"en" : "About Moon Race"
 	},
 	"locations" : {
-			"ua" : "Терен фестивалю",
-			"en" : "Area"
+		"ua" : "Терен фестивалю",
+		"en" : "Area"
 	},
 	"support" : {
-			"ua" : "Підтримай нас",
-			"en" : "Support us"
+		"ua" : "Підтримай нас",
+		"en" : "Support us"
 	},
 	"contact" : {
-			"ua" : "Контакти",
-			"en" : "Contacts"
+		"ua" : "Контакти",
+		"en" : "Contacts"
 	},
 	"registration" : {
-			"ua" : "Реєстрація райдерів",
-			"en" : "Registration for riders"
+		"ua" : "Реєстрація райдерів",
+		"en" : "Registration for riders"
 	},
 	"ticket" : {
-			"ua" : "Купити квиток",
-			"en" : "Tickets"
+		"ua" : "Купити квиток",
+		"en" : "Tickets"
 	},
 	"date-note" : {
-			"ua" : "*можливі зміни #самізнаєтечому",
-			"en" : "*changes are possible #youknowwhy"
+		"ua" : "*можливі зміни #самізнаєтечому",
+		"en" : "*changes are possible #youknowwhy"
 	},
 	"welcome-dates" : {
-			"ua" : "19 - 21 червня 2020",
-			"en" : "June 19 - 21, 2020"
+		"ua" : "19 - 21 червня 2020",
+		"en" : "June 19 - 21, 2020"
 	},
-	"welcome-description-1" : {
+	/* "welcome-description" : {
 		"ua" : "Фестиваль лонгбордингу із змаганнями, схилами, слайдами та інопланетною вечіркою. Приєднуйся!",
 		"en" : "Longboard festival with contests, hills, slides and extraterrestrial party. Join us!"
+	}, */
+	"welcome-description-1" : {
+		"ua" : "Фестиваль лонгбордингу із змаганнями, схилами, слайдами",
+		"en" : "Longboard festival with contests, hills, slides and"
 	},
 	"welcome-description-2" : {
 		"ua" : "та інопланетною вечіркою. Приєднуйся!",
 		"en" : "and extraterrestrial party. Join us!"
 	},
 	"rider-price" : {
-			"ua" : "За ціною 200 грн",
-			"en" : "7 EUR"
+		"ua" : "За ціною 200 грн",
+		"en" : "7 EUR"
 	},
 	"ticket-price" : {	
-			"ua" : "За ціною 420 грн",
-			"en" : "15 EUR"
+		"ua" : "За ціною 420 грн",
+		"en" : "15 EUR"
 	},
 	"video-title" : {
-			"ua" : "Про Moon Race",
-			"en" : "About Moon Race"
+		"ua" : "Про Moon Race",
+		"en" : "About Moon Race"
 	},
 	"video-description" : {
-			"ua" : "Найкосмічніша лонгборд подія літа, що вчетверте пройде серед пагорбів села Круглик Київської області. Туди злетяться астронавти з усієї галактики, щоб повеселитись і позмагатись у мистецтві швидкісних та стильних спусків з даунхілів.",
-			"en" : "The most cosmic longboard event in Ukraine will take place in the hills of Kruhlyk, 30 km away from Kyiv, for the fourth time. Astronauts from all around the galaxy will gather here to have fun and compete in the arts of speed and stylish downhill rides."
+		"ua" : "Найкосмічніша лонгборд подія літа, що вчетверте пройде серед пагорбів села Круглик Київської області. Туди злетяться астронавти з усієї галактики, щоб повеселитись і позмагатись у мистецтві швидкісних та стильних спусків з даунхілів.",
+		"en" : "The most cosmic longboard event in Ukraine will take place in the hills of Kruhlyk, 30 km away from Kyiv, for the fourth time. Astronauts from all around the galaxy will gather here to have fun and compete in the arts of speed and stylish downhill rides."
 	},
 	"activity-title" : {
-			"ua" : "Що тебе очікує?",
-			"en" : "What to expect?"
+		"ua" : "Що тебе очікує?",
+		"en" : "What to expect?"
 	},
 	"downhill-title" : {
-			"ua" : "Даунхіл",
-			"en" : "DOWNHILL"
+		"ua" : "Даунхіл",
+		"en" : "DOWNHILL"
 	},
 	"downhill-description" : {
-			"ua" : "Змагання за титул підкорювача швидкості в категоріях аматор та про.",
-			"en" : "Contest for the title of the King of speed in Amateur and Pro categories."
+		"ua" : "Змагання за титул підкорювача швидкості в категоріях аматор та про.",
+		"en" : "Contest for the title of the King of speed in Amateur and Pro categories."
 	},
 	"freeride-title" : {
-			"ua" : "Фрірайд",
-			"en" : "FREERIDE"
+		"ua" : "Фрірайд",
+		"en" : "FREERIDE"
 	},
 	"freeride-description" : {
-			"ua" : "Скажена швидкість, слайди та визначення власника найконтрольованіших коліс.",
-			"en" : "Contest for those who’ve got the slides and the style."
+		"ua" : "Скажена швидкість, слайди та визначення власника найконтрольованіших коліс.",
+		"en" : "Contest for those who’ve got the slides and the style."
 	},
 	"fun-title" : {
-			"ua" : "Фанові змагання",
-			"en" : "MORE CONTESTS"
+		"ua" : "Фанові змагання",
+		"en" : "MORE CONTESTS"
 	},
 	"fun-description" : {
-			"ua" : "Death Race, Bowling Slide, баланс борд, слеклайн і ще купа всього.",
-			"en" : "Death Race, Bowling Slide, Balance Board, Slackline and many more."
+		"ua" : "Death Race, Bowling Slide, баланс борд, слеклайн і ще купа всього.",
+		"en" : "Death Race, Bowling Slide, Balance Board, Slackline and many more."
 	},
 	"party-title" : {
-			"ua" : "Гучна вечірка",
-			"en" : "COSTUME PARTY"
+		"ua" : "Гучна вечірка",
+		"en" : "COSTUME PARTY"
 	},
 	"party-description" : {
-			"ua" : "Ввірвемось так, щоб нас почули на Місяці!",
-			"en" : "This party will be heard on the Moon!"
+		"ua" : "Ввірвемось так, щоб нас почули на Місяці!",
+		"en" : "This party will be heard on the Moon!"
 	},
 	"other-activity-title" : {
-			"ua" : "Насичена програма",
-			"en" : "WORKSHOPS"
+		"ua" : "Насичена програма",
+		"en" : "WORKSHOPS"
 	},
 	"other-activity-description" : {
-			"ua" : "І не тільки! Подивимось скейт-відео, навчимось крафтити, шейпити, флексити і чілити.",
-			"en" : "And more! We will watch skate videos, learn how to craft, shape, flex and chill."
+		"ua" : "І не тільки! Подивимось скейт-відео, навчимось крафтити, шейпити, флексити і чілити.",
+		"en" : "And more! We will watch skate videos, learn how to craft, shape, flex and chill."
 	},
 	"groups-title" : {
-			"ua" : "Музику гратимуть",
-			"en" : "Who will play?"
+		"ua" : "Музику гратимуть",
+		"en" : "Who will play?"
 	},
 	"kraken-description" : {
-			"ua" : "Прибульці, які щороку висаджуються на Moon Race. Психоделічні хвилі їхнього сьорф-року захоплять кондроль над твоїм розумом і змусять несамовито танцювати!",
-			"en" : "The aliens that come to Moon Race every year. Psychedelic waves of their surf-rock will take control over your mind and make you dance fiercely!"
+		"ua" : "Прибульці, які щороку висаджуються на Moon Race. Психоделічні хвилі їхнього сьорф-року захоплять кондроль над твоїм розумом і змусять несамовито танцювати!",
+		"en" : "The aliens that come to Moon Race every year. Psychedelic waves of their surf-rock will take control over your mind and make you dance fiercely!"
 	},
 	"mock-group-description" : {
-			"ua" : "Чекаємо на повідомлення з Місяця. Щойно отримаємо, інформація про наступного виконавця з’явиться тут.",
-			"en" : "We are waiting for a massage from the Moon. As soon as we have it, the information about the next band will be here."
+		"ua" : "Чекаємо на повідомлення з Місяця. Щойно отримаємо, інформація про наступного виконавця з’явиться тут.",
+		"en" : "We are waiting for a massage from the Moon. As soon as we have it, the information about the next band will be here."
 	},
 	"locations-title" : {
-			"ua" : "Локації",
-			"en" : "Area"
+		"ua" : "Локації",
+		"en" : "Area"
 	},
 	"scene-title" : {
-			"ua" : "Сцена",
-			"en" : "Stage"
+		"ua" : "Сцена",
+		"en" : "Stage"
 	},
 	"scene-description" : {
-			"ua" : "Центр тяжіння території Moon Race, де пройде вечірка і нагородження.",
-			"en" : "Center of gravity of Moon Race where the party and award ceremony will be held."
+		"ua" : "Центр тяжіння території Moon Race, де пройде вечірка і нагородження.",
+		"en" : "Center of gravity of Moon Race where the party and award ceremony will be held."
 	},
 	"food-title" : {
-			"ua" : "Фуд-корт",
-			"en" : "Food court"
+		"ua" : "Фуд-корт",
+		"en" : "Food court"
 	},
 	"food-description" : {
-			"ua" : "Смачні вегетаріанські сніданки, обіди і вечері для справжніх космонавтів. Вартість харчування не входить у вартість квитка.",
-			"en" : "Tasty vegetarian breakfasts, lunch and dinners for real astronauts. The meals are not included in the ticket price."
+		"ua" : "Смачні вегетаріанські сніданки, обіди і вечері для справжніх космонавтів.",
+		"en" : "Tasty vegetarian breakfasts, lunch and dinners for real astronauts."
+	},
+	"food-note" : {
+		"ua" : "Вартість харчування не входить у вартість квитка.",
+		"en" : "The meals are not included in the ticket price."
 	},
 	"camp-title" : {
-			"ua" : "Кемп",
-			"en" : "Camp"
+		"ua" : "Кемп",
+		"en" : "Camp"
 	},
 	"camp-description" : {
-			"ua" : "Затишний дубовий гай зі слеклайном, ліхтариками, гамаками і місцем під ватру чекає на твій намет.",
-			"en" : "A place in oaks with slackline, fairy lights, hammocks and fireplace is waiting for your tent."
+		"ua" : "Затишний дубовий гай зі слеклайном, ліхтариками, гамаками і місцем під ватру чекає на твій намет.",
+		"en" : "A place in oaks with slackline, fairy lights, hammocks and fireplace is waiting for your tent."
 	},
 	"art-title" : {
-			"ua" : "Арт-зона",
-			"en" : "ART-ZONE"
+		"ua" : "Арт-зона",
+		"en" : "ART-ZONE"
 	},
 	"art-description" : {
-			"ua" : "Божевільна майстерня для творчого спілкування крафтсменів і крафтсменок, майстер-класів і майструвань.",
-			"en" : "Crazy workshop for creative communication between craftsmen and craftswomen, workshops and crafting."
+		"ua" : "Божевільна майстерня для творчого спілкування крафтсменів і крафтсменок, майстер-класів і майструвань.",
+		"en" : "Crazy workshop for creative communication between craftsmen and craftswomen, workshops and crafting."
 	},
 	"chill-title" : {
-			"ua" : "Чіл-зона",
-			"en" : "CHILL-ZONE"
+		"ua" : "Чіл-зона",
+		"en" : "CHILL-ZONE"
 	},
 	"chill-description" : {
-			"ua" : "Місце, де тобі буде затишно і чілово.",
-			"en" : "A place to feel cozy and chill."
+		"ua" : "Місце, де тобі буде затишно і чілово.",
+		"en" : "A place to feel cozy and chill."
 	},
 	"info-title" : {
-			"ua" : "Інфоточка",
-			"en" : "INFOPOINT"
+		"ua" : "Інфоточка",
+		"en" : "INFOPOINT"
 	},
 	"info-description" : {
-			"ua" : "Портал в Moon Race. Тут можна знайти мерч, квитки, розетку і карту фестивалю.",
-			"en" : "The portal to Moon Race. You will find here merch, tickets, electricity for your phone and the map of the festival."
+		"ua" : "Портал в Moon Race. Тут можна знайти мерч, квитки, розетку і карту фестивалю.",
+		"en" : "The portal to Moon Race. You will find here merch, tickets, electricity for your phone and the map of the festival."
 	},
 	"support-title" : {
-			"ua" : "Підтримка",
-			"en" : "Support"
+		"ua" : "Підтримка",
+		"en" : "Support"
 	},
 	"support-description" : {
-			"ua" : "Moon Race це некомерційний фестиваль, організований волонтерами лонгбордистами ти можеш стати членом нашої команди або підтримати нас фінансово",
-			"en" : "Moon Race is a non-profit festival organized by volunteer volunteers you can join our team or support us financially"
+		"ua" : "Moon Race це некомерційний фестиваль, організований волонтерами лонгбордистами ти можеш стати членом нашої команди або підтримати нас фінансово",
+		"en" : "Moon Race is a non-profit festival organized by volunteer volunteers you can join our team or support us financially"
 	},
 	"volunteer" : {
-			"ua" : "Стати волонтером",
-			"en" : "Volunteer"
+		"ua" : "Стати волонтером",
+		"en" : "Volunteer"
 	},
 	"volunteer-describe" : {
-			"ua" : "Допоможи при підготовці фестивалю, його розгортанні та згортанні. Для волонтерів вхід безкоштовний.",
-			"en" : "Help us prepare, setup the festival and wrap it up. Volunteer for 4 hours a day during Moon Race and have fun for the rest 20. Free enter for volunteers."
+		"ua" : "Допоможи при підготовці фестивалю, його розгортанні та згортанні.",
+		"en" : "Help us prepare, setup the festival and wrap it up. Volunteer for 4 hours a day during Moon Race and have fun for the rest 20."
+	},
+	"volunteer-note" : {
+		"ua" : "Для волонтерів вхід безкоштовний.",
+		"en" : "Free enter for volunteers."
 	},
 	"donate" : {
 		"ua" : "Задонать по саму рампу!",
@@ -216,6 +228,11 @@ let rotation = 0;
 $(function() {
 	$('#lang-en').click(function() {
 		$('.text-translation').each(function(index, elem) {
+			console.log(' --------- ');
+			console.log($(elem), DICTIONARY[$(elem).data('text')].en);
+			console.log(' 	 ');
+
+			
 			if (DICTIONARY[$(elem).data('text')].en)
 				$(elem).text(DICTIONARY[$(elem).data('text')].en);
 		});
@@ -324,7 +341,10 @@ $(function() {
 		$('.pin-group').removeClass('map-pin-active');
 		$(elem).addClass('map-pin-active');
 
+		console.log(' pin ', elem);
+		
 		const activeLocation = $(elem).data('class');
+		console.log(' activeLocation ', activeLocation);
 		$(`.${activeLocation}`).css('display', 'inline-flex');
 		$('.location-description-container').not(`.${activeLocation}`).css('display', 'none');
 	}

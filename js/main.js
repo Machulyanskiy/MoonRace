@@ -33,10 +33,6 @@ const DICTIONARY = {
 		"ua" : "19 - 21 червня 2020",
 		"en" : "June 19 - 21, 2020"
 	},
-	/* "welcome-description" : {
-		"ua" : "Фестиваль лонгбордингу із змаганнями, схилами, слайдами та інопланетною вечіркою. Приєднуйся!",
-		"en" : "Longboard festival with contests, hills, slides and extraterrestrial party. Join us!"
-	}, */
 	"welcome-description-1" : {
 		"ua" : "Фестиваль лонгбордингу із змаганнями, схилами, слайдами",
 		"en" : "Longboard festival with contests, hills, slides and"
@@ -228,11 +224,6 @@ let rotation = 0;
 $(function() {
 	$('#lang-en').click(function() {
 		$('.text-translation').each(function(index, elem) {
-			console.log(' --------- ');
-			console.log($(elem), DICTIONARY[$(elem).data('text')].en);
-			console.log(' 	 ');
-
-			
 			if (DICTIONARY[$(elem).data('text')].en)
 				$(elem).text(DICTIONARY[$(elem).data('text')].en);
 		});
@@ -262,27 +253,8 @@ $(function() {
 	let rider = $('#logo-rider');
 	let rotationStr;
 	$(window).scroll(function() {
-		/* const logoRider = document.getElementById('logo-rider');
-		console.log('logoRider ', logoRider)
-		console.log('logoRider.style ', logoRider.style)
-		console.log('window.getComputedStyle(logoRider,null) ', window.getComputedStyle(logoRider,null)); */
-		// rotation += 2;
-
-		//------prod version-------
 		rotation += 3;
 		rotateRider(rider, rotation, rotationStr);
-		//-------------
-
-
-		//$('#logo-rider').css({"transform":"none"})
-		/* $('#logo-rider').animate({ '-moz-transform':'rotate(' + rotation + 'deg)'}, 600);
-		$('#logo-rider').animate({ 'transform':'rotate(' + rotation + 'deg)'}, 600); */
-		/* $('#logo-rider').animate({ 'transform':'rotate(' + rotation + 'deg)'}, 600);
-		const logoRider = document.getElementById('logo-rider');
-		console.log('logoRider.style ', logoRider.style.transform)
-		console.log('window.getComputedStyle(logoRider,null) ', window.getComputedStyle(logoRider,null)); */
-		// console.log($('#logo-rider'));
-		// console.log($('#logo-rider').style);
 	});
 	
 	const navHeight = $('#nav-panel').height();
@@ -294,21 +266,18 @@ $(function() {
 			$("#main-nav").removeClass('main-nav-tiny');
 		}
 	};
-	// Collapse now if page is not at top
+
 	navbarCollapse();
-	// Collapse the navbar when page is scrolled
+
 	$(window).scroll(navbarCollapse);
 
     $('#partners-slider').slick({
-		// adaptiveHeight: true,
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 4,
         arrows: false,
 		dots: true,
 		speed: 2000,
-		/* autoplay: true,
-		autoplaySpeed: 5000, */
 		pauseOnFocus: true,
 		responsive: [
 			{
@@ -325,9 +294,6 @@ $(function() {
 				slidesToScroll: 2
 			  }
 			}
-			// You can unslick at a given breakpoint now by adding:
-			// settings: "unslick"
-			// instead of a settings object
 		  ]
     });
 
@@ -349,17 +315,9 @@ $(function() {
 		$('.location-description-container').not(`.${activeLocation}`).css('display', 'none');
 	}
 
-	/* $('.pin-group').click(function() {
-		changeLocation(this);
-	}); */
-
 	$('.pin-group').on('click touchstart', function() {
 		changeLocation(this);
 	});
-
-	/* $('.map-pin').click(function() {
-		$('#scene-pin-group').addClass('map-pin-active');
-	}); */
 
 	$('#page-top').children().not('#main-nav').click(function() {
 		closeMenu();
@@ -371,23 +329,11 @@ $(function() {
 		$('#blank-rectangle').toggleClass('blank-rectangle-overflow');
 	});
 
-
 	$('.nav-item').click(function() {
 		if ($('#navbarResponsive').is(":visible")) {
 			$('#navbarResponsive').hide();
 		}
 	});
-
-	/* const movementStrength = 25;
-	const height = movementStrength / $(window).height();
-	const width = movementStrength / $(window).width();
-	$("#main-block").mousemove(function(e){
-		const pageX = e.pageX - ($(window).width() / 2);
-		const pageY = e.pageY - ($(window).height() / 2);
-		const newvalueX = width * pageX * -1 - 50;
-		const newvalueY = height * pageY * -1 - 100;
-		$('#space-bg-img').css("background-position", newvalueX+"px     "+newvalueY+"px");
-	}); */
 
 	$('.lang-item').click(function() {
 		$('#lang-ua').toggle();
@@ -428,12 +374,6 @@ function rotateRider(rider, rotationDeg, rotationStr) {
 }
 
 function logoClick() {
-	/* if ($('#menu-btn').hasClass('menu-btn-active')) {
-		let rider = $('#logo-rider');
-		let rotationStr;
-		rotation += 300;
-		rotateRider(rider, rotation, rotationStr);
-	} else  */
 	scrollToSection('#page-top');
 }
 

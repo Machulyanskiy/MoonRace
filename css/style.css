@@ -55,6 +55,51 @@
     src: url('../webfonts/Ubuntu-L.ttf');
 }
 
+#page-top {
+    overflow-y: hidden;
+}
+
+#pre-loader{
+    top: 0;
+    width: 100%;
+    height: 900vh;
+    position: absolute;
+    background-color: white;
+    z-index: 9999;
+}
+
+#pre-loader-rider {
+    position: absolute;
+    top: 36vh;
+    left: 50%;
+    margin-left: -14vh;
+    width: 28vh;
+    height: 28vh;
+    background: url(../img/logo-rider.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#pre-loader-text {
+    position: absolute;
+    top: 37vh;
+    left: 50%;
+    margin-left: -13vh;
+    width: 26vh;
+    height: 26vh;
+    background: url(../img/logo-text.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 #another-browser {
     display: none;
     height: 100vh;
@@ -1605,7 +1650,7 @@ section {
 #nav-panel {
     background-color: #162136;
     color: white;
-    z-index: 9999;
+    z-index: 999;
     position: absolute;
     top: 0;
     height: 5vh;

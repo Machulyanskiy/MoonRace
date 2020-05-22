@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html">
 
 <head>
 	<meta charset="utf-8">
@@ -12,20 +12,24 @@
 
 	<link rel="shortcut icon" href="img/logo-text.svg" />
 
-	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/fontawesome.min.css" rel="stylesheet">
 	<link href="css/solid.min.css" rel="stylesheet">
 	<link href="css/brands.min.css" rel="stylesheet">
 	<link href="css/slick.css" rel="stylesheet">
 	<link href="css/slick-theme.css" rel="stylesheet">
-	<link href="css/tooltipster.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
 
-	<link href="css/style.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<script src="js/jquery.min.js"></script>
+	
 </head>
 
 <body id="page-top">
+	<section id="pre-loader">
+		<div id="pre-loader-rider" class="rotate pre-loader-logo-item"></div>
+		<div id="pre-loader-text" class="pre-loader-logo-item"></div>
+		<script src="js/rotate-rider.js"></script>
+	</section>
 	<section id="another-browser">
 		<div id="ab-container" class=>
 			<h1>There is no connection with our space ether</h1>
@@ -47,7 +51,6 @@
 			</div>
 		</div>
 	</section>
-
 	<div id="default">
 		<script type="text/javascript">
 			const isIE = /*@cc_on!@*/false || !!document.documentMode;
@@ -147,6 +150,7 @@
 				</div>
 			</div>
 		</nav>
+		<script type="text/javascript">$(window).scrollTop(0);</script>
 
 		<section id="main-block" class="full-width sec-img">
 			<div id="space-bg-img" class="welcome-img"></div>
@@ -680,10 +684,9 @@
 		</section>
 	</div>
 
-	<script src="js/jquery.min.js"></script>
 	<script src="js/slick.min.js"></script>
-	<script src="js/tooltipster.min.js"></script>
-	<script src="js/main.min.js"></script>
+	<!-- <script src="js/tooltipster.min.js"></script> -->
+	<script src="js/main.js"></script>
 </body>
 
 </html>

@@ -1,5 +1,7 @@
 console.log("claseka");
 
+$(window).scrollTop(0);
+
 const DICTIONARY = {
 	"program" : {
 		"ua" : "Про Moon Race",
@@ -225,21 +227,19 @@ $(function() {
 	$.ajax({
 		url: "https://extreme-ip-lookup.com/json/",
 		type: 'GET',
-	success: function(json)
-	{
-		if (json.country !== 'Ukraine') {
-			document.getElementById("lang-en").click();
+		success: function(json) {
+			if (json.country !== 'Ukraine') {
+				document.getElementById("lang-en").click();
+			}
+			setTimeout(function(){
+				clearInterval(loading);
+				$('#pre-loader').fadeOut( "slow" );
+				$('#page-top').css('overflow-y', 'auto');
+			}, 2500);
+		},
+		error: function(err) {
+			console.log("Request failed, error= " + err);
 		}
-		setTimeout(function(){
-			clearInterval(loading);
-			$('#pre-loader').fadeOut( "slow" );
-			$('#page-top').css('overflow-y', 'auto')
-		}, 2500);
-	},
-	error: function(err)
-	{
-		console.log("Request failed, error= " + err);
-	}
 	});
 
 	$('#lang-en').click(function() {
@@ -335,10 +335,10 @@ $(function() {
 		changeLocation(this);
 	});
 
-	$('#page-top').children().not('#main-nav').click(function() {
+	$('#default').children().not('#main-nav').click(function() {
 		closeMenu();
 	});
-
+ 
 	$('#menu-btn').click(function() {
 		$('#navbarResponsive').toggle();
 		$(this).toggleClass('menu-btn-active');

@@ -224,6 +224,9 @@ const DICTIONARY = {
 let rotation = 0;
 
 $(function() {
+	let rider = $('#logo-rider');
+	let rotationStr;
+	
 	$.ajax({
 		url: "https://extreme-ip-lookup.com/json/",
 		type: 'GET',
@@ -235,11 +238,18 @@ $(function() {
 				clearInterval(loading);
 				$('#pre-loader').fadeOut( "slow" );
 				$('#page-top').css('overflow-y', 'auto');
+				rotateRider(rider, 0, rotationStr);
 			}, 2500);
 		},
 		error: function(err) {
 			console.log("Request failed, error= " + err);
 		}
+	});
+
+	$(window).scroll(function() {
+		navbarCollapse();
+		rotation += 3;
+		rotateRider(rider, rotation, rotationStr);
 	});
 
 	$('#lang-en').click(function() {
@@ -268,14 +278,6 @@ $(function() {
 	$('.place-img-block').click(function() {
 		$('.place-img-block').find('.default').toggle();
 		$('.place-img-block').find('.change').toggle();
-	});
-
-	let rider = $('#logo-rider');
-	let rotationStr;
-	$(window).scroll(function() {
-		navbarCollapse();
-		rotation += 3;
-		rotateRider(rider, rotation, rotationStr);
 	});
 	
 	const navHeight = $('#nav-panel').height();
@@ -327,8 +329,8 @@ $(function() {
 		$(elem).addClass('map-pin-active');
 
 		const activeLocation = $(elem).data('class');
-		$(`.${activeLocation}`).css('display', 'inline-flex');
-		$('.location-description-container').not(`.${activeLocation}`).css('display', 'none');
+		$('.' + activeLocation).css('display', 'inline-flex');
+		$('.location-description-container').not('.' + activeLocation).css('display', 'none');
 	}
 
 	$('.pin-group').on('click touchstart', function() {

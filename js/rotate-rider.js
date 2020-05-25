@@ -9,7 +9,7 @@ const loading = window.setInterval(function() {
   }, 39);
   
 function rotateRider(rider, rotationDeg, rotationStr) {
-	rotationStr = `rotate(${rotationDeg}deg)`;
+	rotationStr = 'rotate(' + rotationDeg + 'deg)';
 	rider.css({
 		"-webkit-transform": rotationStr,
 		"-moz-transform": rotationStr,

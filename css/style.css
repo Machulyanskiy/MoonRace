@@ -491,7 +491,7 @@ section {
     }
 
     #support-blocks {
-        margin: 5vh 0 12vh;
+        margin: 5vh 0 10vh;
     }
 
     .mobile {
@@ -1042,7 +1042,7 @@ section {
 
     #support-blocks {
         display: flex;
-        margin: 5vh 0 12vh;
+        margin: 5vh 0 15vh;
     }
 
     #support-blocks>div {
@@ -1439,7 +1439,7 @@ section {
 
     #support-blocks {
         display: flex;
-        margin: 5vh 0 12vh;
+        margin: 5vh 0 17vh;
     }
 
 
@@ -2166,6 +2166,7 @@ section {
 
 #support-title-description{
     text-align: center;
+    margin: 0px 5%;
 }
 
 #support-container {

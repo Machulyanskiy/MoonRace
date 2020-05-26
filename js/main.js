@@ -108,7 +108,7 @@ const DICTIONARY = {
 		"en" : "Who will play?"
 	},
 	"kraken-description" : {
-		"ua" : "Прибульці, які щороку висаджуються на Moon Race. Психоделічні хвилі їхнього сьорф-року захоплять кондроль над твоїм розумом і змусять несамовито танцювати!",
+		"ua" : "Прибульці, які щороку висаджуються на Moon Race. Психоделічні хвилі їхнього сьорф-року захоплять контроль над твоїм розумом і змусять несамовито танцювати!",
 		"en" : "The aliens that come to Moon Race every year. Psychedelic waves of their surf-rock will take control over your mind and make you dance fiercely!"
 	},
 	"mock-group-description" : {
@@ -176,8 +176,8 @@ const DICTIONARY = {
 		"en" : "Support"
 	},
 	"support-description" : {
-		"ua" : "Moon Race це некомерційний фестиваль, організований волонтерами лонгбордистами ти можеш стати членом нашої команди або підтримати нас фінансово",
-		"en" : "Moon Race is a non-profit festival organized by volunteer volunteers you can join our team or support us financially"
+		"ua" : "Moon Race — це некомерційний фестиваль, організований командою ентузіастів-лонгбордистів. Якщо тобі теж небайдужий лонгбординг, ти можеш підтримати нас грошовим донатом або приєднатись до команди волонтерів.",
+		"en" : "Moon Race is a non-profit festival organized by a group of enthusiastic longboard riders. If you care for longboarding too, support us with a money donation or join the team of volunteers."
 	},
 	"volunteer" : {
 		"ua" : "Стати волонтером",

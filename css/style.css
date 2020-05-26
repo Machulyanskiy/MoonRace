@@ -241,6 +241,14 @@ section {
         display: none;
     }
 
+    .social-link:not(:last-child) {
+        margin-right: 2vw;
+    }
+
+    .social-link {
+        font-size: 10pt;
+    }
+
     #navbarResponsive {
         position: absolute;
         top: 100%;
@@ -755,6 +763,10 @@ section {
 
     #space-bg-img, #planet-img {
         display: none;
+    }
+
+    .social-link:not(:last-child) {
+        margin-right: 1vw;
     }
 
     #reg-block {
@@ -1614,10 +1626,6 @@ section {
     color: white;
 }
 
-.social-link:not(:last-child) {
-    margin-right: 1vw;
-}
-
 .scene-desc-img-pin {
     display: inline-block;
 }
@@ -1954,6 +1962,7 @@ section {
     color: #162136;
     opacity: 0.65;
     font-weight: 999;
+    margin-bottom: 2rem;
 }
 
 .text-sub-description {

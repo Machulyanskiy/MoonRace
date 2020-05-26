@@ -391,6 +391,9 @@ section {
         text-align: left;
     }
 
+    .group-block-description {
+        margin-bottom: 2rem;
+    }
 
     #groups-title {
         padding: 5vh 0 1rem 0;
@@ -1102,6 +1105,10 @@ section {
         font-size: 11pt;
     }
 
+    .group-block-description {
+        margin-bottom: 2rem;
+    }
+
     .group-slide {
         width: 100%;
         display: inline-flex;
@@ -1289,6 +1296,10 @@ section {
 
     .groups-description-block {
         padding: 0;
+    }
+
+    .group-block-description {
+        margin-bottom: 3rem;
     }
 
     .groups-genre-title {
@@ -1962,7 +1973,6 @@ section {
     color: #162136;
     opacity: 0.65;
     font-weight: 999;
-    margin-bottom: 2rem;
 }
 
 .text-sub-description {

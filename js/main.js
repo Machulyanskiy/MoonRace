@@ -32,8 +32,8 @@ const DICTIONARY = {
 		"en" : "*changes are possible #youknowwhy"
 	},
 	"welcome-dates" : {
-		"ua" : "19 - 21 червня 2020",
-		"en" : "June 19 - 21, 2020"
+		"ua" : "7 - 9 серпня 2020",
+		"en" : "August 7 - 9, 2020"
 	},
 	"welcome-description-1" : {
 		"ua" : "Фестиваль лонгбордингу із змаганнями, схилами, слайдами",
@@ -382,9 +382,4 @@ function scrollToSection(sectionId) {
 
 function logoClick() {
 	scrollToSection('#page-top');
-}
-
-function closeCoronaNews() {
-	$('#corona-news').addClass('hidden');
-	$('#corona-news').removeClass('visible');
 }

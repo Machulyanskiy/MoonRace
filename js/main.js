@@ -37,7 +37,7 @@ const DICTIONARY = {
 	},
 	"welcome-description-1" : {
 		"ua" : "Фестиваль лонгбордингу із змаганнями, схилами, слайдами",
-		"en" : "Longboard festival with contests, hills, slides and"
+		"en" : "Longboard festival with contests, hills, slides"
 	},
 	"welcome-description-2" : {
 		"ua" : "та інопланетною вечіркою. Приєднуйся!",
@@ -110,6 +110,10 @@ const DICTIONARY = {
 	"kraken-description" : {
 		"ua" : "Прибульці, які щороку висаджуються на Moon Race. Психоделічні хвилі їхнього сьорф-року захоплять контроль над твоїм розумом і змусять несамовито танцювати!",
 		"en" : "The aliens that come to Moon Race every year. Psychedelic waves of their surf-rock will take control over your mind and make you dance fiercely!"
+	},
+	"lovenjoy-description" : {
+		"ua" : "Бешкетники, що розвалюють музичний простір і танцполи. Готуйтесь плавитись під їхні фантастичні рифи та занурюватись в атмосферу добра, радості і справжньої любові <3",
+		"en" : "Naughty boys who are wrecking Ukrainian musical space and dance floors. Get ready to melt from their fantastic riffs and submerge into the atmosphere of peace, joy and real love <3"
 	},
 	"mock-group-description" : {
 		"ua" : "Чекаємо на повідомлення з Місяця. Щойно отримаємо, інформація про наступного виконавця з’явиться тут.",

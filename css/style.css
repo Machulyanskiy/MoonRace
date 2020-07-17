@@ -861,7 +861,7 @@ section {
     }
 
     .groups-description-content {
-        padding-right: 7vw;
+        padding-right: 4vw;
         height: 100%;
         text-align: left;
     }
@@ -1092,7 +1092,7 @@ section {
     }
 
     .group-block-description {
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
 
     .group-slide {
@@ -1972,13 +1972,10 @@ section {
     left: 6.5vw;
 }
 
+
 .group-img {
     margin: 0 auto;
-}
-
-#kraken {
     width: 100%;
-    background: url(../img/Bands-Kraken-Landau.png);
     background-position: center;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -1987,14 +1984,16 @@ section {
     background-size: cover;
 }
 
+#kraken {
+    background-image: url(../img/Bands-Kraken-Landau.png);
+}
+
+#lovenjoy {
+    background-image: url(../img/lovenjoy.jpg);
+}
+
 #octopus {
-    width: 100%;
-    background: url(../img/octocat.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
+    background-image: url(../img/octocat.png);
     background-size: contain;
 }
 
@@ -2301,4 +2300,8 @@ a.support-btn {
 
 .slick-dotted.slick-slider {
     margin: 0;
+}
+
+.slick-cloned:last-child {
+    display: none !important;
 }

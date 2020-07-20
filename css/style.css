@@ -1989,7 +1989,11 @@ section {
 }
 
 #lovenjoy {
-    background-image: url(../img/lovenjoy.jpg);
+    background-image: url(../img/lovenjoy.png);
+}
+
+#gruv-gruv {
+    background-image: url(../img/gruv-gruv.png);
 }
 
 #octopus {

@@ -107,6 +107,10 @@ const DICTIONARY = {
 		"ua" : "Музику гратимуть",
 		"en" : "Who will play?"
 	},
+	"grv-grv-description" : {
+		"ua" : "Київська музична формація, що виступає за нестандартний саунд на вечірках. Мультижанровість, любов до експериментів, еклектичні ламані ритми, а гловне — мінімум монотонності і максимум груву!",
+		"en" : "Musical formation from Kyiv, that favors non-conventional sound at parties. Multi genre performances, passion for experiments, broken eclectic rhythms and maximum groove!"
+	},
 	"kraken-description" : {
 		"ua" : "Прибульці, які щороку висаджуються на Moon Race. Психоделічні хвилі їхнього сьорф-року захоплять контроль над твоїм розумом і змусять несамовито танцювати!",
 		"en" : "The aliens that come to Moon Race every year. Psychedelic waves of their surf-rock will take control over your mind and make you dance fiercely!"

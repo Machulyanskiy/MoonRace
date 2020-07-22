@@ -838,9 +838,11 @@ section {
     }
 
     #groups .slick-dots {
-        top: 85%;
-        left: 90%;
-        width: auto;    
+        top: 90%;
+        left: 87%;
+        width: auto;
+        bottom: 0;
+        display: inline-flex;   
     }
 
     #groups-title {
@@ -1261,7 +1263,7 @@ section {
 
     #groups .slick-dots {
         top: 85%;
-        left: 90%;
+        left: 87%;
         width: auto;    
     }
 
@@ -1992,8 +1994,8 @@ section {
     background-image: url(../img/lovenjoy.png);
 }
 
-#gruv-gruv {
-    background-image: url(../img/gruv-gruv.png);
+#grv-grv {
+    background-image: url(../img/grv-grv.png);
 }
 
 #octopus {

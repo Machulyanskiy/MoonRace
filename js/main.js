@@ -391,3 +391,7 @@ function scrollToSection(sectionId) {
 function logoClick() {
 	scrollToSection('#page-top');
 }
+
+function disableLink() {
+	event.preventDefault()
+}

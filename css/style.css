@@ -2311,3 +2311,14 @@ a.support-btn {
 .slick-cloned:last-child {
     display: none !important;
 }
+
+.isDisabled {
+  color: #212529 !important;
+  cursor: not-allowed;
+  opacity: 0.2;
+}
+
+.isDisabled:hover {
+    opacity: 0.5;
+    border: 2px solid #212529 !important;
+}

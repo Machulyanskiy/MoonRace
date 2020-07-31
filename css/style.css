@@ -2322,3 +2322,7 @@ a.support-btn {
     opacity: 0.5;
     border: 2px solid #212529 !important;
 }
+
+#doska {
+    max-width: 85%;
+}
